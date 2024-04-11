@@ -1,26 +1,27 @@
 import React from "react";
+import type { SVGProps } from 'react';
 import Image from "next/image";
 
 // Definición de la paleta de colores
 const colorPalette = {
   textPrimary: "text-black", // Color de texto principal (negro)
   textSecondary: "text-red-700", // Color de texto secundario (gris suave)
-  shadow: "shadow-lg", // Sombra
   bgColor: "bg-white", // Fondo blanco
   textTransparent: "text-transparent", // Texto transparente
   bgClipText: "bg-clip-text", // Fondo para el texto
 };
 
+
 const Main_title = () => {
   return (
     <div
-      className={`flex justify-center flex-col mt-32 ${colorPalette.shadow}`}
+      className={`flex justify-center flex-col mt-36 `}
     >
       <div className="inline-block">
         <h4
           className={`flex justify-center text-xl font-semibold ${colorPalette.textPrimary}`}
         >
-          <span className={`${colorPalette.textSecondary}`}>Hi</span>
+          <span className={`${colorPalette.textSecondary}`}>👋</span>
 
           <span>, my name is&nbsp;</span>
 
@@ -80,7 +81,32 @@ const Main_title = () => {
             Icono
           </h4>
         </div>
+
       </div>
+
+      
+      <div className="mt-40 flex flex-col animate-">
+      
+      <div className="flex justify-center"> 
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-10 h-10 animate-ping">
+          <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 5.25 7.5 7.5 7.5-7.5m-15 6 7.5 7.5 7.5-7.5" />
+        </svg>
+      </div>
+
+      <div className="flex justify-center"> 
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-10 h-10 animate-ping">
+          <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 5.25 7.5 7.5 7.5-7.5m-15 6 7.5 7.5 7.5-7.5" />
+        </svg>
+      </div>
+
+      <div className="flex justify-center"> 
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-10 h-10 animate-ping">
+          <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 5.25 7.5 7.5 7.5-7.5m-15 6 7.5 7.5 7.5-7.5" />
+        </svg>
+      </div>
+
+      </div>
+
     </div>
   );
 };

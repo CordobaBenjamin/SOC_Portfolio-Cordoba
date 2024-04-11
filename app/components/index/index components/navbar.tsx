@@ -54,13 +54,13 @@ const Navbar = () => {
             </div>
           </div>
 
-          <Disclosure.Panel className="sm:hidden">
+          <Disclosure.Panel className="sm:hidden absolute bg-gray-200 w-full">
             <div className="px-2 pt-2 pb-3">
               {navigation.map((item) => (
                 <a
                   key={item.name}
                   href={item.href}
-                  className={`block px-3 py-2 rounded-md text-base font-medium ${item.current ? colorPalette.textPrimary : colorPalette.textSecondary} ${colorPalette.hover}`}
+                  className={`block px-3 py-2 rounded-md text-base font-medium border-l-red-400 border-l-2 ${item.current ? colorPalette.textPrimary : colorPalette.textSecondary} ${colorPalette.hover}`}
                   aria-current={item.current ? 'page' : undefined}
                 >
                   {item.name}
