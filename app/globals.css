@@ -43,6 +43,15 @@
   }
 }
 
+.grayscale-image {
+  filter: grayscale(100%);
+}
+
+/* Al hacer hover sobre la imagen, elimina gradualmente el filtro de escala de grises */
+.grayscale-image:hover {
+  filter: grayscale(0%);
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;

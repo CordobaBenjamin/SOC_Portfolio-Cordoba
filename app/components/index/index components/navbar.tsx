@@ -13,7 +13,7 @@ const colorPalette = {
 const navigation = [
   { name: 'Home', href: '/', current: true}, // Marca la página actual como "current"
   { name: 'About', href: '/about' },
-  { name: 'Portfolio', href: '/portfolio'}, 
+  { name: 'Projects', href: '/portfolio'}, 
   { name: 'Contact', href: '/contact' },
 ];
 
