@@ -1,6 +1,3 @@
-
-
-
 const About = () => {
   return (
     <div className="w-full p-4 bg-gray-200 mt-24">
@@ -13,16 +10,51 @@ const About = () => {
           />
         </div>
         <div className="md:w-2/3 md:pl-8 mt-4 md:mt-0">
-          <h1 className="text-2xl font-bold">
+          <h1 className="text-2xl font-bold text-red-700">
             Benjamin L. Cordoba
           </h1>
-          <p className="mt-4 text-lg text-gray-600">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae,
-            eveniet. Facere corporis quas eaque amet delectus corrupti tempore
-            aliquid animi sit natus voluptas, sed, aliquam voluptatem obcaecati,
-            perspiciatis repellat! Ipsum!
-          </p>
+          <div className="flex flex-col">
+            <span>
+              Hello, My name is Benjamín Córdoba, I am 19 years old. I have been
+              studying web development for 2 years. And in the last year I
+              started to be a computer engineering student.{" "}
+            </span>
+            <span className="font-semibold">
+              {" "}
+              (Also for now almost everything is logic and mathematics)
+            </span>
+            <div>
+              <span>
+                {" "}
+                I participated in conferences/courses/talks and in general
+                learning from different professionals here in Argentina.
+              </span>
+              <span className="font-semibold">
+                {" "}
+                (I will detail this later.)
+              </span>
+            </div>
+          </div>
 
+          <div className="w-4/5 mx-auto px-10 pt-2 pb-10 my-5 shadow-2xl border-2 border-black rounded-2xl">
+            <div className="w-16 h-16 p-2 border-2  mx-auto my-5 rounded-full shadow-2xl border-gray-300  bg-gray-300 bg-opacity-90 ">
+              <img src="/front_logo.png" alt="Front end Icon" />
+            </div>
+
+            <h2 className="flex justify-center text-xl mb-5 font-medium">
+              {" "}
+              How I can help you?
+            </h2>
+
+            <span>
+              {" "}
+              For me, it is important to know all aspects of the web development
+              process; I will learn any technology that helps me create
+              applications. For now I am focusing on front end,
+            </span>
+
+            <span className="text-red-700 font-semibold"> and ... </span>
+          </div>
         </div>
       </div>
     </div>
