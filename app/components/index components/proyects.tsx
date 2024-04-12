@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import { useState } from "react";
 
 const Proyects = () => {
@@ -27,9 +28,10 @@ const Proyects = () => {
               {" "}
               Sign Up Proyect
             </h2>
-            <div className="w-full h-56 shadow-2xl  shadow-gray-500 rounded-2xl overflow-hidden my-5">
-              <img
+            <div className="w-full h-56 shadow-2xl  shadow-gray-500 rounded-2xl overflow-hidden my-5 relative">
+              <Image
                 src="/sign_up.png"
+                layout="fill"
                 className="inset-0 w-full h-full object-cover grayscale-image transition-transform duration-300 transform scale-100 hover:scale-150"
                 alt="Image"
               />
@@ -54,9 +56,10 @@ const Proyects = () => {
               {" "}
               Ecommerce Proyect
             </h2>
-            <div className="w-full h-56 shadow-2xl shadow-gray-500 rounded-2xl overflow-hidden my-5">
-              <img
+            <div className="w-full h-56 shadow-2xl shadow-gray-500 rounded-2xl overflow-hidden my-5 relative">
+              <Image
                 src="/market_gaming.png"
+                layout="fill"
                 className="inset-0 w-full h-full object-cover  grayscale-image transition-transform duration-300 transform scale-100 hover:scale-150"
                 alt="Image"
               />
@@ -81,9 +84,10 @@ const Proyects = () => {
               {" "}
               Game Proyect
             </h2>
-            <div className="w-full h-56 shadow-2xl shadow-gray-500 rounded-2xl overflow-hidden my-5">
-              <img
+            <div className="w-full h-56 shadow-2xl shadow-gray-500 rounded-2xl overflow-hidden my-5 relative">
+              <Image
                 src="/hangman.png"
+                layout="fill"
                 className="inset-0 w-full h-full object-cover  grayscale-image transition-transform duration-300 transform scale-100 hover:scale-150"
                 alt="Image"
               />

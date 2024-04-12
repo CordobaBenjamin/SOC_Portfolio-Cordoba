@@ -23,11 +23,11 @@ const Main_title = () => {
         >
           <span className={`${colorPalette.textSecondary}`}>👋</span>
 
-          <span>, my name is&nbsp;</span>
+          <span>, my name is {" "};</span>
 
           <span className={`${colorPalette.textSecondary}`}>Benjamin</span>
 
-          <span>&nbsp;and I am a ...</span>
+          <span>and I am a ...</span>
         </h4>
       </div>
 
@@ -61,7 +61,7 @@ const Main_title = () => {
 
         <div className="col-span-4 flex justify-center items-center relative">
           {/* Imagen retrato */}
-          <div className="absolute inset-0 z-0 flex justify-center items-center">
+          <div className="absolute inset-0 z-0 flex justify-center items-center ">
             <Image
               src="/retrato.png"
               alt="Retrato"

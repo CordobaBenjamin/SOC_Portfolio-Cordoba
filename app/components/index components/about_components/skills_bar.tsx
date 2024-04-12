@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const languages = [
   {
@@ -39,7 +40,9 @@ const Skills_bar = () => {
         <div className="animate-slide whitespace-nowrap flex items-center h-full ">
           {languages.map((lang, index) => (
             <div key={index} className="mx-6 flex items-center flex-col">
-              <img src={lang.icon} alt={lang.name} className={lang.class} />
+              <div className="w-16 h-16 relative"> 
+              <Image src={lang.icon} alt={lang.name} className={lang.class} layout="fill"/>
+              </div>
               <h2 className="mb-4 text-red-800">{lang.name}</h2>
             </div>
           ))}

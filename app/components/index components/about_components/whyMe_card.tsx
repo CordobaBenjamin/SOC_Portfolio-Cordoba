@@ -1,10 +1,11 @@
 import React from "react";
+import Image from "next/image";
 
 const WhyMe_card = () => {
   return (
     <div className="w-4/5 mx-auto px-10 pt-2 pb-10 mt-10 shadow-2xl border-2 border-black rounded-2xl">
-      <div className="w-16 h-16 p-2 border-2  mx-auto my-5 rounded-full shadow-2xl border-gray-300  bg-gray-300 bg-opacity-90 ">
-        <img src="/me_icon.png" alt="Front end Icon" />
+      <div className="w-16 h-16 p-2 border-2  mx-auto my-5 rounded-full shadow-2xl border-gray-300  bg-gray-300 bg-opacity-90  relative">
+        <Image src="/me_icon.png" alt="Front end Icon" layout="fill" />
       </div>
 
       <h2 className="flex justify-center text-xl mb-5 font-medium"> Why me?</h2>
@@ -38,7 +39,7 @@ const WhyMe_card = () => {
         </span>
 
         <span >
-        That's why I know that ,
+        That&apos;s why I know that ,
         </span>
 
         <span className="text-black font-semibold">
