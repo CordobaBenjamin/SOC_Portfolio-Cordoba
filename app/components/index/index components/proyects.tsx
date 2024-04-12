@@ -20,14 +20,14 @@ const Proyects = () => {
           </div>
         </div>
 
-        {/* className="max-w-7xl mx-auto flex flex-col md:flex-row items-center" */}
+
         <div>
-          <div className="flex  flex-col justify-center mt-10">
-            <h2 className="flex justify-center font-bold text-xl">
+          <div className="flex  flex-col justify-center mt-14  shadow-2xl shadow-gray-700 p-4 rounded-xl ">
+            <h2 className="flex justify-center font-bold text-xl text-red-700 border-2 border-y-red-900">
               {" "}
               Sign Up Proyect
             </h2>
-            <div className="w-full h-56 shadow-2xl shadow-gray-500 rounded-2xl overflow-hidden my-5">
+            <div className="w-full h-56 shadow-2xl  shadow-gray-500 rounded-2xl overflow-hidden my-5">
               <img
                 src="/sign_up.png"
                 className="inset-0 w-full h-full object-cover grayscale-image transition-transform duration-300 transform scale-100 hover:scale-150"
@@ -49,8 +49,8 @@ const Proyects = () => {
             </div>
           </div>
 
-          <div className="flex  flex-col justify-center mt-10">
-            <h2 className="flex justify-center font-bold text-xl">
+          <div className="flex  flex-col justify-center mt-14  shadow-2xl shadow-gray-700 p-4 rounded-xl ">
+            <h2 className="flex justify-center font-bold text-xl  text-red-700 border-2 border-y-red-900">
               {" "}
               Ecommerce Proyect
             </h2>
@@ -76,8 +76,8 @@ const Proyects = () => {
             </div>
           </div>
 
-          <div className="flex  flex-col justify-center mt-10">
-            <h2 className="flex justify-center font-bold text-xl">
+          <div className="flex  flex-col justify-center mt-14  shadow-2xl shadow-gray-700 p-4 rounded-xl ">
+            <h2 className="flex justify-center font-bold text-xl  text-red-700 border-2 border-y-red-900">
               {" "}
               Game Proyect
             </h2>
@@ -90,7 +90,7 @@ const Proyects = () => {
             </div>
             <div>
               <span className="font-bold"> TypeScript </span>
-              <span> project, was created with  </span>
+              <span> Hangman game project, was created with  </span>
               <span className="font-bold"> Pure CSS </span>
               <span> and  </span>
               <span className="font-bold"> Webpack</span>
