@@ -74,7 +74,7 @@ const Main_title = () => {
         </div>
 
         <div className="col-start-7 col-end-9 w-fit ">
-        <button className="mx-auto  font-medium rounded-r-md animate-pulse"> Buenos Aires </button>
+       
         </div>
       </div>
 
