@@ -30,27 +30,33 @@ const languages = [
 ];
 
 const Skills_bar = () => {
-  return (
-    <>
+  return <>
 
-      <div className="overflow-hidden relative w-full h-32">
-        <h2 className="flex justify-center text-red-700 text-xl font-semibold">
-          These are my knowledge for the moment
-        </h2>
-        <div className="animate-slide whitespace-nowrap flex items-center h-full ">
-          {languages.map((lang, index) => (
-            <div key={index} className="mx-6 flex items-center flex-col">
-              <div className="w-16 h-16 relative"> 
-              <Image src={lang.icon} alt={lang.name} className={lang.class} layout="fill"/>
-              </div>
-              <h2 className="mb-4 text-red-800">{lang.name}</h2>
+    <div className="overflow-hidden relative w-full h-32">
+      <h2 className="flex justify-center text-red-700 text-xl font-semibold">
+        These are my knowledge for the moment
+      </h2>
+      <div className="animate-slide whitespace-nowrap flex items-center h-full ">
+        {languages.map((lang, index) => (
+          <div key={index} className="mx-6 flex items-center flex-col">
+            <div className="w-16 h-16 relative"> 
+            <Image
+              src={lang.icon}
+              alt={lang.name}
+              className={lang.class}
+              fill
+              sizes="100vw"
+              style={{
+                objectFit: "cover"
+              }} />
             </div>
-          ))}
-        </div>
+            <h2 className="mb-4 text-red-800">{lang.name}</h2>
+          </div>
+        ))}
+      </div>
 
-    </div>
-    </>
-  );
+  </div>
+  </>;
 };
 
 export default Skills_bar;

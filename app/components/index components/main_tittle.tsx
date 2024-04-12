@@ -1,33 +1,32 @@
 import React from "react";
-import type { SVGProps } from 'react';
+import type { SVGProps } from "react";
 import Image from "next/image";
 
 // Definición de la paleta de colores
 const colorPalette = {
   textPrimary: "text-black", // Color de texto principal (negro)
-  textSecondary: "text-purple-700", // Color de texto secundario (gris suave)
+  textSecondary: "text-red-700", // Color de texto secundario (gris suave)
   bgColor: "bg-white", // Fondo blanco
   textTransparent: "text-transparent", // Texto transparente
   bgClipText: "bg-clip-text", // Fondo para el texto
 };
 
-
 const Main_title = () => {
   return (
-    <div
-      className={`flex justify-center flex-col mt-36 `}
-    >
+    <div className={`flex justify-center flex-col mt-36 `}>
       <div className="inline-block">
         <h4
           className={`flex justify-center text-xl font-semibold ${colorPalette.textPrimary}`}
         >
-          <span className={`${colorPalette.textSecondary}`}>👋</span>
+          <div>
+            <span className={`${colorPalette.textSecondary}`}>👋</span>
 
-          <span>, my name is {" "};</span>
+            <span>, my name is</span>
 
-          <span className={`${colorPalette.textSecondary}`}>Benjamin</span>
+            <span className={`${colorPalette.textSecondary}`}> Benjamin</span>
 
-          <span>and I am a ...</span>
+            <span> and I am a ...</span>
+          </div>
         </h4>
       </div>
 
@@ -51,12 +50,8 @@ const Main_title = () => {
       </div>
 
       <div className="grid grid-cols-8 h-1/3">
-        <div className="col-start-1 col-end-3">
-          <h4
-            className={`flex justify-center text-lg font-semibold ${colorPalette.textPrimary}`}
-          >
-            Argentina
-          </h4>
+        <div className="col-start-1 col-end-3 mx-auto">
+            <button className="mx-auto  font-medium rounded-r-md animate-pulse"> Argentina </button>
         </div>
 
         <div className="col-span-4 flex justify-center items-center relative">
@@ -67,46 +62,74 @@ const Main_title = () => {
               alt="Retrato"
               width={400}
               height={300}
-              layout="responsive"
-              objectFit="cover"
               className="rounded-full "
+              sizes="100vw"
+              style={{
+                width: "100%",
+                height: "auto",
+                objectFit: "cover",
+              }}
             />
           </div>
         </div>
 
-        <div className="col-start-7 col-end-9">
-          <h4
-            className={`flex justify-center text-xl font-semibold ${colorPalette.textPrimary}`}
+        <div className="col-start-7 col-end-9 w-fit ">
+        <button className="mx-auto  font-medium rounded-r-md animate-pulse"> Buenos Aires </button>
+        </div>
+      </div>
+
+      <div className="mt-40 flex flex-col animate-">
+        <div className="flex justify-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={1.5}
+            stroke="currentColor"
+            className="w-10 h-10 animate-ping"
           >
-            Icono
-          </h4>
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="m4.5 5.25 7.5 7.5 7.5-7.5m-15 6 7.5 7.5 7.5-7.5"
+            />
+          </svg>
         </div>
 
-      </div>
+        <div className="flex justify-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={1.5}
+            stroke="currentColor"
+            className="w-10 h-10 animate-ping"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="m4.5 5.25 7.5 7.5 7.5-7.5m-15 6 7.5 7.5 7.5-7.5"
+            />
+          </svg>
+        </div>
 
-      
-      <div className="mt-40 flex flex-col animate-">
-      
-      <div className="flex justify-center"> 
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-10 h-10 animate-ping">
-          <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 5.25 7.5 7.5 7.5-7.5m-15 6 7.5 7.5 7.5-7.5" />
-        </svg>
+        <div className="flex justify-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={1.5}
+            stroke="currentColor"
+            className="w-10 h-10 animate-ping"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="m4.5 5.25 7.5 7.5 7.5-7.5m-15 6 7.5 7.5 7.5-7.5"
+            />
+          </svg>
+        </div>
       </div>
-
-      <div className="flex justify-center"> 
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-10 h-10 animate-ping">
-          <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 5.25 7.5 7.5 7.5-7.5m-15 6 7.5 7.5 7.5-7.5" />
-        </svg>
-      </div>
-
-      <div className="flex justify-center"> 
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-10 h-10 animate-ping">
-          <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 5.25 7.5 7.5 7.5-7.5m-15 6 7.5 7.5 7.5-7.5" />
-        </svg>
-      </div>
-
-      </div>
-
     </div>
   );
 };

@@ -14,9 +14,12 @@ const About = () => {
           <Image
             src="/retrato2.png"
             alt="Tu Nombre"
-            layout="fill"
             className="w-1/2 h-auto rounded-full shadow-2xl border-2 flex mx-auto "
-          />
+            fill
+            sizes="100vw"
+            style={{
+              objectFit: "cover"
+            }} />
         </div>
         <div className="md:w-2/3 md:pl-8 mt-4 md:mt-0">
           <h1 className="text-2xl font-bold text-red-700">
@@ -47,7 +50,14 @@ const About = () => {
 
           <div className="w-4/5 mx-auto px-10 pt-2 pb-10 my-5 shadow-2xl border-2 border-black rounded-2xl">
             <div className="w-16 h-16 p-2 border-2  mx-auto my-5 rounded-full shadow-2xl border-gray-300  bg-gray-300 bg-opacity-90 relative">
-              <Image src="/front_logo.png" alt="Front end Icon"  layout="fill"/>
+              <Image
+                src="/front_logo.png"
+                alt="Front end Icon"
+                fill
+                sizes="100vw"
+                style={{
+                  objectFit: "cover"
+                }} />
             </div>
 
             <h2 className="flex justify-center text-xl mb-5 font-medium">
