@@ -5,7 +5,7 @@ import Image from "next/image";
 // Definición de la paleta de colores
 const colorPalette = {
   textPrimary: "text-black", // Color de texto principal (negro)
-  textSecondary: "text-red-700", // Color de texto secundario (gris suave)
+  textSecondary: "text-purple-700", // Color de texto secundario (gris suave)
   bgColor: "bg-white", // Fondo blanco
   textTransparent: "text-transparent", // Texto transparente
   bgClipText: "bg-clip-text", // Fondo para el texto
