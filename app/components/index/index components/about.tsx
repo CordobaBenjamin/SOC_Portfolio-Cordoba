@@ -1,7 +1,9 @@
+
+
+
 const About = () => {
   return (
     <div className="w-full p-4 bg-gray-200 mt-24">
-			
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center">
         <div className="md:w-1/3">
           <img
@@ -11,7 +13,7 @@ const About = () => {
           />
         </div>
         <div className="md:w-2/3 md:pl-8 mt-4 md:mt-0">
-          <h1 className="text-2xl font-bold text-red-700 ">
+          <h1 className="text-2xl font-bold">
             Benjamin L. Cordoba
           </h1>
           <p className="mt-4 text-lg text-gray-600">
@@ -21,10 +23,6 @@ const About = () => {
             perspiciatis repellat! Ipsum!
           </p>
 
-          <div>
-					
-
-					</div>
         </div>
       </div>
     </div>
