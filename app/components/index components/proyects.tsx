@@ -27,7 +27,7 @@ const Proyects = () => {
             {" "}
             Sign Up Proyect
           </h2>
-          <div className="w-full h-80 xl:h-96 shadow-2xl  shadow-gray-500 rounded-2xl overflow-hidden my-5 relative">
+          <div className="w-full h-72 xl:h-96 shadow-2xl  shadow-gray-500 rounded-2xl overflow-hidden my-5 relative">
             <Image
               src="/sign_up.png"
               className="inset-0 w-full h-full object-cover grayscale-image transition-transform duration-300 transform scale-100 hover:scale-125"
@@ -58,7 +58,7 @@ const Proyects = () => {
             {" "}
             Ecommerce Proyect
           </h2>
-          <div className="w-full h-80 xl:h-96  shadow-2xl shadow-gray-500 rounded-2xl overflow-hidden my-5 relative">
+          <div className="w-full h-72 xl:h-96  shadow-2xl shadow-gray-500 rounded-2xl overflow-hidden my-5 relative">
             <Image
               src="/market_gaming.png"
               className="inset-0 w-full h-full object-cover  grayscale-image transition-transform duration-300 transform scale-100 hover:scale-125"
@@ -89,7 +89,7 @@ const Proyects = () => {
             {" "}
             Game Proyect
           </h2>
-          <div className="w-full h-80 xl:h-96  shadow-2xl shadow-gray-500 rounded-2xl overflow-hidden my-5 relative">
+          <div className="w-full h-72 xl:h-96  shadow-2xl shadow-gray-500 rounded-2xl overflow-hidden my-5 relative">
             <Image
               src="/hangman.png"
               className="inset-0 w-full h-full object-cover  grayscale-image transition-transform duration-300 transform scale-100 hover:scale-125"
