@@ -49,11 +49,11 @@ const About = () => {
 
             <div className="mx-auto w-4/6 sm:w-3/6 lg:w-1/3">
             <Image
-              src="/retrato.png"
+              src="/about_pic.png"
               alt="Retrato"
               width={150}
               height={100}
-              className="rounded-2xl flex justify-center xl:justify-end "
+              className="rounded-3xl border-2 border-black flex justify-center xl:border-0 xl:rounded-2xl xl:justify-end grayscale duration-1000 transition-all animate-photo"
               sizes="50vw"
               style={{
                 width: "100%",

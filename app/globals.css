@@ -28,8 +28,9 @@
 }
 
 .animate-slide {
-  animation: slide 20s linear infinite;
+  animation: slide 15s linear infinite;
 }
+
 
 @keyframes pulse {
   0%, 100% {
@@ -70,7 +71,21 @@
   }
 }
 
+@keyframes toggleGrayscale {
+  0% {
+    filter: grayscale(100%);
+  }
+  50% {
+    filter: grayscale(0%);
+  }
+  100% {
+    filter: grayscale(100%);
+  }
+}
 
+.animate-photo {
+  animation: toggleGrayscale 4s infinite;
+}
 
 @keyframes fadeIn {
   0% { opacity: 0; }

@@ -4,7 +4,7 @@ import { useState } from "react";
 
 const Proyects = () => {
   return <>
-    <div className="w-full p-4 bg-gray-200 mt-24">
+    <div className="w-full p-4 bg-gray-200 mt-16">
       <div className="flex flex-col justify-center">
         <div>
           <h1 className="text-7xl font-semibold flex justify- pt-2 w-full text-red-700">

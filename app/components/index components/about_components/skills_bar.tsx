@@ -4,39 +4,39 @@ import Image from "next/image";
 const languages = [
   {
     name: "React",
-    icon: "/react_logo_wb.png",
-    class: "h-16 min-w-16 rounded-2xl border-2 border-black",
+    icon: "/react_icon.png",
+    class: "h-16 min-w-16 rounded-2xl border-2 border-black grayscale duration-1000 transition-all animate-photo",
   },
   {
     name: "Next.js",
-    icon: "/next_logo.png",
-    class: "h-16 min-w-16 rounded-2xl border-2 border-black",
+    icon: "/next_icon.png",
+    class: "h-16 min-w-16 rounded-2xl border-2 border-black grayscale duration-1000 transition-all animate-photo",
   },
   {
     name: "Tailwind",
-    icon: "/tailwind_logo_wb.png",
-    class: "h-16 min-w-16 rounded-2xl pt-2 pb-2 border-2 border-black",
+    icon: "/tailwind_icon.png",
+    class: "h-16 min-w-16 rounded-2xl pt-2 pb-2 border-2 border-black grayscale duration-1000 transition-all animate-photo",
   },
   {
     name: "JSX",
-    icon: "/jsx_logo_wb.png",
-    class: "h-16 min-w-16 rounded-2xl border-2 border-black",
+    icon: "/jsx_icon.png",
+    class: "h-16 min-w-16 rounded-2xl border-2 border-black grayscale duration-1000 transition-all animate-photo",
   },
   {
     name: "TSX",
-    icon: "/tsx-logo-512_wb.png",
-    class: "h-16 min-w-16 rounded-2xl border-2 border-black",
+    icon: "/tsx_icon.png",
+    class: "h-16 min-w-16 rounded-2xl border-2 border-black grayscale duration-1000 transition-all animate-photo",
   },
 ];
 
 const Skills_bar = () => {
-  return <>
+  return <div className="my-20">
 
-    <div className="overflow-hidden relative w-full h-32 mb-5">
-      <h2 className="flex justify-center mb-5 text-red-700 text-xl font-semibold md:text-2xl xl:text-3xl">
-        These are my knowledge for the moment
+    <div className="overflow-hidden relative w-full h-4/5 my-5">
+      <h2 className="flex justify-center mb-6 text-red-700 text-xl font-semibold md:text-2xl xl:text-3xl">
+        These are my Code Skills for the moment
       </h2>
-      <div className="animate-slide whitespace-nowrap flex items-center h-full mb-5">
+      <div className="animate-slide whitespace-nowrap flex items-center  mb-5 h-1/4">
         {languages.map((lang, index) => (
           <div key={index} className="mx-6 flex items-center flex-col">
             <div className="w-16 h-16 relative md:w-20 md:h-20 xl:w-24 xl:h-24 "> 
@@ -50,13 +50,15 @@ const Skills_bar = () => {
                 objectFit: "cover"
               }} />
             </div>
-            <h2 className="mb-4 text-red-800 md:my-">{lang.name}</h2>
+            <div className=""> 
+            <h2 className="text-red-800">{lang.name}</h2>
+            </div>
           </div>
         ))}
       </div>
 
   </div>
-  </>;
+  </div>;
 };
 
 export default Skills_bar;

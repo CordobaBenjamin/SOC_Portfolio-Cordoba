@@ -25,7 +25,7 @@ const Navbar = () => {
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="flex justify-between h-16 items-center">
               <div className="flex-shrink-0">
-                <h2 className={`text-2xl font-bold animate__animated animate__zoomIn ${colorPalette.textPrimary}`}>Portfolio</h2>
+                <h2 className={`text-2xl lg:text-4xl font-bold animate__animated animate__zoomIn ${colorPalette.textPrimary}`}>Portfolio</h2>
               </div>
               <div className="hidden sm:block">
                 <div className="flex space-x-4">
@@ -33,7 +33,7 @@ const Navbar = () => {
                     <a
                       key={item.name}
                       href={item.href}
-                      className={`px-3 py-2 rounded-md text-sm font-medium ${item.current ? colorPalette.textPrimary : colorPalette.textSecondary} ${colorPalette.hover}`}
+                      className={`px-3 py-2 rounded-md text-sm lg:text-xl font-medium ${item.current ? colorPalette.textPrimary : colorPalette.textSecondary} ${colorPalette.hover}`}
                       aria-current={item.current ? 'page' : undefined}
                     >
                       {item.name}

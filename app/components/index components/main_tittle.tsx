@@ -16,7 +16,7 @@ const Main_title = () => {
     <div className={`flex justify-center flex-col mt-28 lg:mt-16 xl:mt-20 `}>
       <div className="inline-block">
         <h4
-          className={`flex justify-center text-xl sm:text-2xl lg:text-3xl  mb-10 font-semibold  ${colorPalette.textPrimary}`}
+          className={`flex justify-center text-xl sm:text-2xl lg:text-3xl  mb-5 font-semibold  ${colorPalette.textPrimary}`}
         >
           <div>
             <span className={`${colorPalette.textSecondary}`}>👋</span>
@@ -42,7 +42,32 @@ const Main_title = () => {
       </div>
 
       <div className="grid grid-cols-8 h-1/3">
-        <div className="col-start-7 col-end-9 w-fit "></div>
+        
+        <div className="col-start-1 col-end-3 mx-auto">
+            
+        </div>
+
+        <div className="col-span-4 flex justify-center items-center relative">
+          {/* Imagen retrato */}
+          <div className="absolute inset-0 z-0 flex justify-center items-center  xl:size-9/12 2xl:size-7/12 mx-auto">
+          <Image
+              src="/main_pic.png"
+              alt="Retrato"
+              width={150}
+              height={100}
+              className="rounded-3xl  flex justify-center xl:border-0  xl:justify-end grayscale "
+              sizes="50vw"
+              style={{
+                width: "100%",
+                height: "auto",
+                objectFit: "cover",
+              }}
+            />
+          </div>
+        </div>
+        <div className="col-start-7 col-end-9 w-fit ">
+          
+        </div>
       </div>
 
       <div className="mt-40 flex flex-col animate-">
