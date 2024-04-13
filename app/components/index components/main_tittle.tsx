@@ -34,10 +34,10 @@ const Main_title = () => {
         <h1
           className={` text-7xl min-[505px]:text-8xl min-[665px]:text-9xl lg:text-12xl xl:text-14 2xl:text-15xl font-bold ${colorPalette.textTransparent} ${colorPalette.bgClipText} text-center w-full`}
         >
-          <span className={`inline-block ${colorPalette.textSecondary}`}>
+          <span className={`inline-block ${colorPalette.textSecondary} animate__animated animate__slideInLeft`}>
             Front End
           </span>{" "}
-          <span className={`block ${colorPalette.textPrimary}`}>Developer</span>
+          <span className={`block ${colorPalette.textPrimary} animate__animated animate__slideInLeft`}>Developer</span>
         </h1>
       </div>
 

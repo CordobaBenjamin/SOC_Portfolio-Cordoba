@@ -23,7 +23,7 @@ const Proyects = () => {
 
       <div>
         <div className="flex flex-col mx-auto mt-14  shadow-2xl shadow-gray-700 p-4 rounded-xl sm:w-11/12 md:w-9/12 lg:w-8/12 2xl:w-7/12 ">
-          <h2 className="flex justify-center font-bold text-xl lg:text-2xl 2xl:text-4xl text-red-700 border-2 border-y-red-900">
+          <h2 className="flex justify-center font-bold text-xl lg:text-2xl 2xl:text-4xl text-red-700 border-2 border-y-red-900 animate__animated animate__fadeIn">
             {" "}
             Sign Up Proyect
           </h2>
@@ -54,7 +54,7 @@ const Proyects = () => {
         </div>
 
         <div className="flex  flex-col mx-auto mt-14  shadow-2xl shadow-gray-700 p-4 rounded-xl sm:w-11/12 md:w-9/12 lg:w-8/12 2xl:w-7/12">
-          <h2 className="flex justify-center font-bold text-xl lg:text-2xl 2xl:text-4xl  text-red-700 border-2 border-y-red-900">
+          <h2 className="flex justify-center font-bold text-xl lg:text-2xl 2xl:text-4xl  text-red-700 border-2 border-y-red-900 animate__animated animate__fadeIn">
             {" "}
             Ecommerce Proyect
           </h2>
@@ -85,7 +85,7 @@ const Proyects = () => {
         </div>
 
         <div className="flex  flex-col mx-auto mt-14  shadow-2xl shadow-gray-700 p-4 rounded-xl sm:w-11/12 md:w-9/12 lg:w-8/12 2xl:w-7/12 ">
-          <h2 className="flex justify-center font-bold text-xl lg:text-2xl 2xl:text-4xl  text-red-700 border-2 border-y-red-900">
+          <h2 className="flex justify-center font-bold text-xl lg:text-2xl 2xl:text-4xl  text-red-700 border-2 border-y-red-900 animate__animated animate__fadeIn">
             {" "}
             Game Proyect
           </h2>

@@ -1,6 +1,10 @@
 import type { Metadata } from "next";
 import { ReactNode } from "react";
+import 'animate.css';
 import "./globals.css";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+
 
 import Navbar from "./components/index components/navbar";
 import Main_tittle from "./components/index components/main_tittle";
@@ -21,20 +25,85 @@ interface IndexLayoutProps {
   children: ReactNode; // Declara que children es de tipo ReactNode
 }
 
-function IndexLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+function IndexLayout({ children }: { children: React.ReactNode }) {
+
+  const { ref: aboutRef, inView: aboutInView } = useInView({
+    triggerOnce: true,
+    threshold: 0.5,
+  });
+
+  const { ref: cardsRef, inView: cardsInView } = useInView({
+    triggerOnce: true,
+    threshold: 0.5,
+  });
+
+  const { ref: skillsRef, inView: skillsInView } = useInView({
+    triggerOnce: true,
+    threshold: 0.5,
+  });
+
+  const { ref: projectsRef, inView: projectsInView } = useInView({
+    triggerOnce: true,
+    threshold: 0.5,
+  });
+
+  const { ref: contactRef, inView: contactInView } = useInView({
+    triggerOnce: true,
+    threshold: 0.5,
+  });
+
   return (
     <div className="bg-gray-200">
       <Navbar />
       <Main_tittle />
-      <About />
-      <div className="flex flex-col xl:flex-row"> 
-        <Help_card/>
-        <WhyMe_card />
-        <Learning_card />
-      </div>
-      <Skills_bar />
+
+      {/* Sección About */}
+      <motion.div
+        ref={aboutRef}
+        initial={{ opacity: 0, y: 50 }}
+        animate={aboutInView ? { opacity: 1, y: 0 } : {}}
+        transition={{ duration: 0.4, delay: 0.1 }}
+      >
+        <About />
+      </motion.div>
+
+      {/* Sección Cards */}
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        animate={cardsInView ? { opacity: 1, y: 0 } : {}}
+        transition={{ duration: 0.4, delay: 0.1 }}
+      >
+        <div ref={cardsRef} className="flex flex-col xl:flex-row">
+          <Help_card />
+          <WhyMe_card />
+          <Learning_card />
+        </div>
+      </motion.div>
+
+      {/* Sección Skills Bar */}
+      <motion.div
+        ref={skillsRef}
+        initial={{ opacity: 0, y: 50 }}
+        animate={skillsInView ? { opacity: 1, y: 0 } : {}}
+        transition={{ duration: 0.3 }}
+      >
+        <Skills_bar />
+      </motion.div>
+
+      {/* Sección Projects */}
+
       <Proyects />
-      <Contact/>
+
+      {/* Sección Contact */}
+      <motion.div
+        ref={contactRef}
+        initial={{ opacity: 0, y: 50 }}
+        animate={contactInView ? { opacity: 1, y: 0 } : {}}
+        transition={{ duration: 0.4 }}
+      >
+        <Contact />
+      </motion.div>
+
       {children}
     </div>
   );
