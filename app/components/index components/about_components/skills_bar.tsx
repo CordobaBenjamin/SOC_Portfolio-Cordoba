@@ -33,9 +33,11 @@ const Skills_bar = () => {
   return <div className="my-20">
 
     <div className="overflow-hidden relative w-full h-4/5 my-5">
-      <h2 className="flex justify-center mb-6 text-red-700 text-xl font-semibold md:text-2xl xl:text-3xl">
-        These are my Code Skills for the moment
-      </h2>
+      <div className=""> 
+        <h2 className="flex justify-center mx-auto w-11/12 mb-6 text-red-700 text-xl font-semibold md:text-2xl xl:text-3xl">
+          These are my Code Skills for the moment
+        </h2>
+      </div>
       <div className="animate-slide whitespace-nowrap flex items-center  mb-5 h-1/4">
         {languages.map((lang, index) => (
           <div key={index} className="mx-6 flex items-center flex-col">

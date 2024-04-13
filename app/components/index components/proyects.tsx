@@ -5,15 +5,15 @@ import { useState } from "react";
 const Proyects = () => {
   return <>
     <div className="w-full p-4 bg-gray-200 mt-16">
-      <div className="flex flex-col justify-center">
+      <div className="flex flex-col  mx-auto sm:w-8/12 md:w-6/12 lg:w-4/12 xl:w-5/12 border-4 border-y-black">
         <div>
-          <h1 className="text-7xl font-semibold flex justify- pt-2 w-full text-red-700">
+          <h1 className="text-7xl 2xl:text-8xl font-semibold flex justify- pt-2 w-full text-red-700">
             {" "}
             Main{" "}
           </h1>
         </div>
         <div>
-          <h1 className="text-7xl font-semibold flex justify-end pt-2 w-full ">
+          <h1 className="text-7xl 2xl:text-9xl font-semibold flex justify-end pt-2 w-full ">
             {" "}
             Proyects{" "}
           </h1>
@@ -22,15 +22,15 @@ const Proyects = () => {
 
 
       <div>
-        <div className="flex  flex-col justify-center mt-14  shadow-2xl shadow-gray-700 p-4 rounded-xl ">
-          <h2 className="flex justify-center font-bold text-xl text-red-700 border-2 border-y-red-900">
+        <div className="flex flex-col mx-auto mt-14  shadow-2xl shadow-gray-700 p-4 rounded-xl sm:w-11/12 md:w-9/12 lg:w-8/12 2xl:w-7/12 ">
+          <h2 className="flex justify-center font-bold text-xl lg:text-2xl 2xl:text-4xl text-red-700 border-2 border-y-red-900">
             {" "}
             Sign Up Proyect
           </h2>
-          <div className="w-full h-56 shadow-2xl  shadow-gray-500 rounded-2xl overflow-hidden my-5 relative">
+          <div className="w-full h-80 xl:h-96 shadow-2xl  shadow-gray-500 rounded-2xl overflow-hidden my-5 relative">
             <Image
               src="/sign_up.png"
-              className="inset-0 w-full h-full object-cover grayscale-image transition-transform duration-300 transform scale-100 hover:scale-150"
+              className="inset-0 w-full h-full object-cover grayscale-image transition-transform duration-300 transform scale-100 hover:scale-125"
               alt="Image"
               fill
               sizes="100vw"
@@ -38,7 +38,7 @@ const Proyects = () => {
                 objectFit: "cover"
               }} />
           </div>
-          <div>
+          <div className="lg:text-xl 2xl:text-2xl">
             <span>Login page project developed with</span>
             <span className="font-bold"> Next.js, React Hook Form</span>
             <span> stylized using</span>
@@ -53,15 +53,15 @@ const Proyects = () => {
           </div>
         </div>
 
-        <div className="flex  flex-col justify-center mt-14  shadow-2xl shadow-gray-700 p-4 rounded-xl ">
-          <h2 className="flex justify-center font-bold text-xl  text-red-700 border-2 border-y-red-900">
+        <div className="flex  flex-col mx-auto mt-14  shadow-2xl shadow-gray-700 p-4 rounded-xl sm:w-11/12 md:w-9/12 lg:w-8/12 2xl:w-7/12">
+          <h2 className="flex justify-center font-bold text-xl lg:text-2xl 2xl:text-4xl  text-red-700 border-2 border-y-red-900">
             {" "}
             Ecommerce Proyect
           </h2>
-          <div className="w-full h-56 shadow-2xl shadow-gray-500 rounded-2xl overflow-hidden my-5 relative">
+          <div className="w-full h-80 xl:h-96  shadow-2xl shadow-gray-500 rounded-2xl overflow-hidden my-5 relative">
             <Image
               src="/market_gaming.png"
-              className="inset-0 w-full h-full object-cover  grayscale-image transition-transform duration-300 transform scale-100 hover:scale-150"
+              className="inset-0 w-full h-full object-cover  grayscale-image transition-transform duration-300 transform scale-100 hover:scale-125"
               alt="Image"
               fill
               sizes="100vw"
@@ -69,7 +69,7 @@ const Proyects = () => {
                 objectFit: "cover"
               }} />
           </div>
-          <div>
+          <div className="lg:text-xl 2xl:text-2xl">
             <span> Ecommerce application  </span>
             <span className="font-bold"> Transpiled to TSX</span>
             <span> from an old javascript-based project,</span>
@@ -84,15 +84,15 @@ const Proyects = () => {
           </div>
         </div>
 
-        <div className="flex  flex-col justify-center mt-14  shadow-2xl shadow-gray-700 p-4 rounded-xl ">
-          <h2 className="flex justify-center font-bold text-xl  text-red-700 border-2 border-y-red-900">
+        <div className="flex  flex-col mx-auto mt-14  shadow-2xl shadow-gray-700 p-4 rounded-xl sm:w-11/12 md:w-9/12 lg:w-8/12 2xl:w-7/12 ">
+          <h2 className="flex justify-center font-bold text-xl lg:text-2xl 2xl:text-4xl  text-red-700 border-2 border-y-red-900">
             {" "}
             Game Proyect
           </h2>
-          <div className="w-full h-56 shadow-2xl shadow-gray-500 rounded-2xl overflow-hidden my-5 relative">
+          <div className="w-full h-80 xl:h-96  shadow-2xl shadow-gray-500 rounded-2xl overflow-hidden my-5 relative">
             <Image
               src="/hangman.png"
-              className="inset-0 w-full h-full object-cover  grayscale-image transition-transform duration-300 transform scale-100 hover:scale-150"
+              className="inset-0 w-full h-full object-cover  grayscale-image transition-transform duration-300 transform scale-100 hover:scale-125"
               alt="Image"
               fill
               sizes="100vw"
@@ -100,7 +100,7 @@ const Proyects = () => {
                 objectFit: "cover"
               }} />
           </div>
-          <div>
+          <div className="lg:text-xl 2xl:text-2xl">
             <span className="font-bold"> TypeScript </span>
             <span> Hangman game project, was created with  </span>
             <span className="font-bold"> Pure CSS </span>
