@@ -6,10 +6,11 @@ import Navbar from "./components/index components/navbar";
 import Main_tittle from "./components/index components/main_tittle";
 import About from "./components/index components/about";
 import Skills_bar from "./components/index components/about_components/skills_bar";
+import Help_card from "./components/index components/about_components/Help_card";
 import Learning_card from "./components/index components/about_components/learning_card";
 import WhyMe_card from "./components/index components/about_components/whyMe_card";
 import Proyects from "./components/index components/proyects";
-import Contact from "./components/index components/about_components/learning_card";
+import Contact from "./components/index components/contact";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -26,10 +27,14 @@ function IndexLayout({ children }: Readonly<{ children: React.ReactNode }>) {
       <Navbar />
       <Main_tittle />
       <About />
+      <div className="flex flex-col xl:flex-row"> 
+        <Help_card/>
+        <WhyMe_card />
+        <Learning_card />
+      </div>
       <Skills_bar />
-      <Learning_card />
-      <WhyMe_card />
       <Proyects />
+      <Contact/>
       {children}
     </div>
   );

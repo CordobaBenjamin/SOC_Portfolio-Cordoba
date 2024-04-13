@@ -32,14 +32,14 @@ const languages = [
 const Skills_bar = () => {
   return <>
 
-    <div className="overflow-hidden relative w-full h-32">
-      <h2 className="flex justify-center text-red-700 text-xl font-semibold">
+    <div className="overflow-hidden relative w-full h-32 mb-5">
+      <h2 className="flex justify-center mb-5 text-red-700 text-xl font-semibold md:text-2xl xl:text-3xl">
         These are my knowledge for the moment
       </h2>
-      <div className="animate-slide whitespace-nowrap flex items-center h-full ">
+      <div className="animate-slide whitespace-nowrap flex items-center h-full mb-5">
         {languages.map((lang, index) => (
           <div key={index} className="mx-6 flex items-center flex-col">
-            <div className="w-16 h-16 relative"> 
+            <div className="w-16 h-16 relative md:w-20 md:h-20 xl:w-24 xl:h-24 "> 
             <Image
               src={lang.icon}
               alt={lang.name}
@@ -50,7 +50,7 @@ const Skills_bar = () => {
                 objectFit: "cover"
               }} />
             </div>
-            <h2 className="mb-4 text-red-800">{lang.name}</h2>
+            <h2 className="mb-4 text-red-800 md:my-">{lang.name}</h2>
           </div>
         ))}
       </div>

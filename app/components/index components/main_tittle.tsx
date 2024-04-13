@@ -13,10 +13,10 @@ const colorPalette = {
 
 const Main_title = () => {
   return (
-    <div className={`flex justify-center flex-col mt-36 `}>
+    <div className={`flex justify-center flex-col mt-28 lg:mt-16 xl:mt-20 `}>
       <div className="inline-block">
         <h4
-          className={`flex justify-center text-xl font-semibold ${colorPalette.textPrimary}`}
+          className={`flex justify-center text-xl sm:text-2xl lg:text-3xl  mb-10 font-semibold  ${colorPalette.textPrimary}`}
         >
           <div>
             <span className={`${colorPalette.textSecondary}`}>👋</span>
@@ -30,52 +30,19 @@ const Main_title = () => {
         </h4>
       </div>
 
-      <div>
+      <div className="flex justify-center items-center">
         <h1
-          className={`text-7xl font-bold ${colorPalette.textTransparent} ${colorPalette.bgClipText} relative inline-block p-4`}
+          className={` text-7xl min-[505px]:text-8xl min-[665px]:text-9xl lg:text-12xl xl:text-14 2xl:text-15xl font-bold ${colorPalette.textTransparent} ${colorPalette.bgClipText} text-center w-full`}
         >
-          <span
-            id="first"
-            className={`inline-block ${colorPalette.textSecondary}`}
-          >
+          <span className={`inline-block ${colorPalette.textSecondary}`}>
             Front End
-            <span
-              id="second"
-              className={`text-7xl block ${colorPalette.textPrimary}`}
-            >
-              Developer
-            </span>{" "}
-          </span>
+          </span>{" "}
+          <span className={`block ${colorPalette.textPrimary}`}>Developer</span>
         </h1>
       </div>
 
       <div className="grid grid-cols-8 h-1/3">
-        <div className="col-start-1 col-end-3 mx-auto">
-            <button className="mx-auto  font-medium rounded-r-md animate-pulse"> Argentina </button>
-        </div>
-
-        <div className="col-span-4 flex justify-center items-center relative">
-          {/* Imagen retrato */}
-          <div className="absolute inset-0 z-0 flex justify-center items-center ">
-            <Image
-              src="/retrato.png"
-              alt="Retrato"
-              width={400}
-              height={300}
-              className="rounded-full "
-              sizes="100vw"
-              style={{
-                width: "100%",
-                height: "auto",
-                objectFit: "cover",
-              }}
-            />
-          </div>
-        </div>
-
-        <div className="col-start-7 col-end-9 w-fit ">
-       
-        </div>
+        <div className="col-start-7 col-end-9 w-fit "></div>
       </div>
 
       <div className="mt-40 flex flex-col animate-">
