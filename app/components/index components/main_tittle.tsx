@@ -50,7 +50,7 @@ const Main_title = () => {
         <div className="col-span-4 flex justify-center items-center relative">
           {/* Imagen retrato */}
           <div className="absolute inset-0 z-0 flex justify-center items-center  xl:size-9/12 2xl:size-7/12 mx-auto">
-          <Image
+          {/* <Image
               src="/main_pic.png"
               alt="Retrato"
               width={150}
@@ -62,7 +62,7 @@ const Main_title = () => {
                 height: "auto",
                 objectFit: "cover",
               }}
-            />
+            /> */}
           </div>
         </div>
         <div className="col-start-7 col-end-9 w-fit ">
