@@ -2,6 +2,10 @@ import React from 'react';
 import 'animate.css';
 import { Disclosure } from '@headlessui/react';
 import { Bars3Icon } from '@heroicons/react/16/solid';
+
+import { useLanguage } from './components/lenguageSwitcher';
+import { LanguageSwitcher } from './components/lenguageSwitcher';
+
 // Definición de la paleta de colores
 const colorPalette = {
   background: 'bg-cream', // Fondo blanco crema
@@ -11,11 +15,13 @@ const colorPalette = {
 };
 
 const navigation = [
-  { name: 'Home', href: '/', current: true}, // Marca la página actual como "current"
-  { name: 'About', href: '/about' },
-  { name: 'Projects', href: '/portfolio'}, 
-  { name: 'Contact', href: '/contact' },
+  { name: 'Home', href: '#home', current: true}, // Marca la página actual como "current"
+  { name: 'About', href: '#about' },
+  { name: 'Proyects', href: '#proyect'}, 
+  { name: 'Contact', href: '#contact' },
 ];
+
+const { language, changeLanguage } = useLanguage();
 
 const Navbar = () => {
   return (

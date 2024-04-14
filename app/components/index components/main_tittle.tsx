@@ -1,6 +1,7 @@
-import React from "react";
-import type { SVGProps } from "react";
-import Image from "next/image";
+import { SVGProps } from "react"; // Importar tipos SVGProps de react
+import React from "react"; // Importar React (aunque no se use explícitamente aquí)
+
+// Otros imports...
 
 // Definición de la paleta de colores
 const colorPalette = {
@@ -13,7 +14,7 @@ const colorPalette = {
 
 const Main_title = () => {
   return (
-    <div className={`flex justify-center flex-col mt-28 lg:mt-16 xl:mt-20 `}>
+    <div id="home" className={`flex justify-center flex-col mt-28 lg:mt-16 xl:mt-20 ` }>
       <div className="inline-block">
         <h4
           className={`flex justify-center text-xl sm:text-2xl lg:text-3xl  mb-5 font-semibold  ${colorPalette.textPrimary}`}
@@ -48,21 +49,7 @@ const Main_title = () => {
         </div>
 
         <div className="col-span-4 flex justify-center items-center relative">
-          {/* Imagen retrato */}
           <div className="absolute inset-0 z-0 flex justify-center items-center  xl:size-9/12 2xl:size-7/12 mx-auto">
-          {/* <Image
-              src="/main_pic.png"
-              alt="Retrato"
-              width={150}
-              height={100}
-              className="rounded-3xl  flex justify-center xl:border-0  xl:justify-end grayscale "
-              sizes="50vw"
-              style={{
-                width: "100%",
-                height: "auto",
-                objectFit: "cover",
-              }}
-            /> */}
           </div>
         </div>
         <div className="col-start-7 col-end-9 w-fit ">
@@ -70,7 +57,7 @@ const Main_title = () => {
         </div>
       </div>
 
-      <div className="mt-40 flex flex-col animate-">
+      <div className="mt-40 flex flex-col xl:mt-28">
         <div className="flex justify-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -78,7 +65,7 @@ const Main_title = () => {
             viewBox="0 0 24 24"
             strokeWidth={1.5}
             stroke="currentColor"
-            className="w-10 h-10 animate-ping"
+            className="w-10 h-10 animate-ping xl:w-16 xl:h-16"
           >
             <path
               strokeLinecap="round"
@@ -95,7 +82,7 @@ const Main_title = () => {
             viewBox="0 0 24 24"
             strokeWidth={1.5}
             stroke="currentColor"
-            className="w-10 h-10 animate-ping"
+            className="w-10 h-10 animate-ping xl:w-16 xl:h-16"
           >
             <path
               strokeLinecap="round"
@@ -112,7 +99,7 @@ const Main_title = () => {
             viewBox="0 0 24 24"
             strokeWidth={1.5}
             stroke="currentColor"
-            className="w-10 h-10 animate-ping"
+            className="w-10 h-10 animate-ping xl:w-16 xl:h-16"
           >
             <path
               strokeLinecap="round"

@@ -1,20 +1,20 @@
-import type { Metadata } from "next";
 import { ReactNode } from "react";
-import 'animate.css';
-import "./globals.css";
+
+import type { Metadata } from "next";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-
-
 import Navbar from "./components/index components/navbar";
 import Main_tittle from "./components/index components/main_tittle";
 import About from "./components/index components/about";
-import Skills_bar from "./components/index components/about_components/skills_bar";
-import Help_card from "./components/index components/about_components/Help_card";
-import Learning_card from "./components/index components/about_components/learning_card";
-import WhyMe_card from "./components/index components/about_components/whyMe_card";
+import Skills_bar from "./components/index components/components/skills_bar";
+import Help_card from "./components/index components/components/Help_card";
+import Learning_card from "./components/index components/components/learning_card";
+import WhyMe_card from "./components/index components/components/whyMe_card";
 import Proyects from "./components/index components/proyects";
 import Contact from "./components/index components/contact";
+
+import "animate.css";
+import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -26,7 +26,6 @@ interface IndexLayoutProps {
 }
 
 function IndexLayout({ children }: { children: React.ReactNode }) {
-
   const { ref: aboutRef, inView: aboutInView } = useInView({
     triggerOnce: true,
     threshold: 0.5,
@@ -53,60 +52,61 @@ function IndexLayout({ children }: { children: React.ReactNode }) {
   });
 
   return (
-    <div className="bg-gray-200">
-      <Navbar />
-      <Main_tittle />
+  
+      <div className="bg-gray-200">
+        <Navbar />
+        <Main_tittle />
 
-      {/* Sección About */}
-      <motion.div
-        ref={aboutRef}
-        initial={{ opacity: 0, y: 50 }}
-        animate={aboutInView ? { opacity: 1, y: 0 } : {}}
-        transition={{ duration: 0.4, delay: 0.1 }}
-      >
-        <About />
-      </motion.div>
+        {/* Sección About */}
+        <motion.div
+          ref={aboutRef}
+          initial={{ opacity: 0, y: 50 }}
+          animate={aboutInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.4, delay: 0.1 }}
+        >
+          <About />
+        </motion.div>
 
-      {/* Sección Cards */}
-      <motion.div
-        initial={{ opacity: 0, y: 50 }}
-        animate={cardsInView ? { opacity: 1, y: 0 } : {}}
-        transition={{ duration: 0.4, delay: 0.1 }}
-      >
-        <div ref={cardsRef} className="flex flex-col xl:flex-row">
-          <Help_card />
-          <WhyMe_card />
-          <Learning_card />
-        </div>
-      </motion.div>
+        {/* Sección Cards */}
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          animate={cardsInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.4, delay: 0.1 }}
+        >
+          <div ref={cardsRef} className="flex flex-col xl:flex-row">
+            <Help_card />
+            <WhyMe_card />
+            <Learning_card />
+          </div>
+        </motion.div>
 
-      {/* Sección Skills Bar */}
-      <motion.div
-        ref={skillsRef}
-        initial={{ opacity: 0, y: 50 }}
-        animate={skillsInView ? { opacity: 1, y: 0 } : {}}
-        transition={{ duration: 0.3 }}
-      >
-        <Skills_bar />
-      </motion.div>
+        {/* Sección Skills Bar */}
+        <motion.div
+          ref={skillsRef}
+          initial={{ opacity: 0, y: 50 }}
+          animate={skillsInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.3 }}
+        >
+          <Skills_bar />
+        </motion.div>
 
-      {/* Sección Projects */}
+        {/* Sección Projects */}
 
-      <Proyects />
+        <Proyects />
 
-      {/* Sección Contact */}
-      <motion.div
-        ref={contactRef}
-        initial={{ opacity: 0, y: 50 }}
-        animate={contactInView ? { opacity: 1, y: 0 } : {}}
-        transition={{ duration: 0.4 }}
-      >
-        <Contact />
-      </motion.div>
+        {/* Sección Contact */}
+        <motion.div
+          ref={contactRef}
+          initial={{ opacity: 0, y: 50 }}
+          animate={contactInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.4 }}
+        >
+          <Contact />
+        </motion.div>
 
-      {children}
-    </div>
-  );
-}
+        {children}
+      </div>
+    
+  )}
 
 export default IndexLayout;

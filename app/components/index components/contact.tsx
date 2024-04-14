@@ -4,7 +4,7 @@ import Image from "next/image";
 const Contact = () => {
   return (
     <>
-      <div className="w-full p-4 bg-gray-200 mt-24">
+      <div id="contact" className="w-full p-4 bg-gray-200 mt-24">
 
         <div className="flex flex-row justify-center">
           <h1 className="text-6xl text-red-700 font-semibold flex justify-center pt-2 w-full my-6 border-y-2 border-black md:text-7xl lg:text-9xl">
@@ -32,7 +32,7 @@ const Contact = () => {
                   src="/gmail_icon.png"
                   alt="Front end Icon"
                   layout="fill"
-                  className="animate-pulse"
+                  className="animate-pulse bg-transparent"
                 />
               </div>
 
@@ -52,7 +52,7 @@ const Contact = () => {
                   src="/telefono_icon.png"
                   alt="Front end Icon"
                   layout="fill"
-                  className="animate-pulse"
+                  className="animate-pulse bg-transparent"
                 />
               </div>
 
