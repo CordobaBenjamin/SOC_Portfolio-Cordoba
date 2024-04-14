@@ -1,9 +1,8 @@
-import { SVGProps } from "react"; // Importar tipos SVGProps de react
 import React from "react"; // Importar React (aunque no se use explícitamente aquí)
 
 import LanguageTexts from './components/lenguageText'
 import { useLanguage } from './components/lenguageSwitcher';
-import { LanguageSwitcher } from './components/lenguageSwitcher';
+
 
 // Otros imports...
 
@@ -18,7 +17,7 @@ const colorPalette = {
 
 const Main_title = () => {
 
-  const { language, changeLanguage } = useLanguage();
+  const { language } = useLanguage();
   const {span1, span2} = LanguageTexts[language].main;
 
   return (

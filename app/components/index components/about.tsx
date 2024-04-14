@@ -1,11 +1,11 @@
 import Image from "next/image";
-import LanguageTexts from "./components/lenguageText";
-import { useLanguage } from "./components/lenguageSwitcher";
-import { LanguageSwitcher } from "./components/lenguageSwitcher";
+import LanguageTexts from './components/lenguageText'
+import { useLanguage } from './components/lenguageSwitcher';
+
 
 const About = () => {
-  const { language, changeLanguage } = useLanguage();
-  const { h2, tittle, span1, span2, span3, span4, } =
+  const { language,  } = useLanguage();
+  const { tittle, span1, span2, span3, span4, } =
     LanguageTexts[language].about;
 
   return (
@@ -44,7 +44,7 @@ const About = () => {
               alt="Retrato"
               width={150}
               height={100}
-              className="rounded-3xl border-2 border-black flex justify-center xl:border-0 xl:rounded-2xl xl:justify-end grayscale duration-1000 transition-all animate-photo"
+              className="rounded-3xl shadow-2xl flex justify-center xl:shadow-none xl:rounded-2xl xl:justify-end grayscale duration-1000 transition-all animate-photo"
               sizes="50vw"
               style={{
                 width: "100%",

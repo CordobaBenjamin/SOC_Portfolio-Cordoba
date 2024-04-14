@@ -1,7 +1,14 @@
 import React from 'react'
 import Image from 'next/image';
+import LanguageTexts from "./lenguageText";
+import { useLanguage } from "./lenguageSwitcher";
+
 
 const Help_card = () => {
+
+  const { language } = useLanguage();
+  const {title, span1, span2} = LanguageTexts[language].help_card;
+
   return (
     <>
       <div className="w-4/5 md:w-2/3 xl:w-2/5 xl:mx-6 xl:mb-0 mx-auto px-10 pt-2 pb-10 mb-5 shadow-2xl border-2 border-black rounded-2xl">
@@ -18,18 +25,13 @@ const Help_card = () => {
               </div>
 
               <h2 className="flex justify-center text-xl mb-5 font-medium  md:text-2xl  lg:text-3xl">
-                {" "}
-                How I can help you?
+                {title}
               </h2>
 
               <span className="md:text-xl  lg:text-2xl">
-                {" "}
-                For me, it is important to know all aspects of the web
-                development process; I will learn any technology that helps me
-                create applications. For now I am focusing on front end,
+                {span1}
               </span>
-
-              <span className="text-red-700 font-semibold lg:text-2xl"> and ... </span>
+              
             </div>
     </>
   )

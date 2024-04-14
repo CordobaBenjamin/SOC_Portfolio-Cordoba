@@ -2,13 +2,13 @@ import React from "react";
 import Image from "next/image";
 import LanguageTexts from './components/lenguageText'
 import { useLanguage } from './components/lenguageSwitcher';
-import { LanguageSwitcher } from './components/lenguageSwitcher';
+
 
 
 const Contact = () => {
 
-  const { language, changeLanguage } = useLanguage();
-  const {a1, a2, a3, a4} = LanguageTexts[language].navbar;
+  const { language } = useLanguage();
+  const {title, span1, span2, span3} = LanguageTexts[language].contact;
 
   return (
     <>
@@ -16,8 +16,7 @@ const Contact = () => {
 
         <div className="flex flex-row justify-center">
           <h1 className="text-6xl text-red-700 font-semibold flex justify-center pt-2 w-full my-6 border-y-2 border-black md:text-7xl lg:text-9xl">
-            {" "}
-            Contact{" "}
+           {title}
           </h1>
         </div>
 
@@ -28,8 +27,7 @@ const Contact = () => {
 
               <div className="flex flex-col pb-10 mb-2">
                 <span className="mx-auto xl:text-xl font-medium">
-                  Need to ge in touch with me? Please see my contact information
-                  in the card below.{" "}
+                  {span1}
                 </span>
               </div>
             </div>
@@ -46,7 +44,7 @@ const Contact = () => {
 
               <h2 className="flex justify-center text-xl font-medium text-red-700">
                 {" "}
-                Email Contact
+                {span2}
               </h2>
 
               <h1 className="flex justify-center font-bold text-l px-2">
@@ -65,8 +63,7 @@ const Contact = () => {
               </div>
 
               <h2 className="flex justify-center text-xl font-medium text-red-700">
-                {" "}
-                Phone or Whatsapp
+                {span3}
               </h2>
 
               <h1 className="flex justify-center font-bold text-l px-2">

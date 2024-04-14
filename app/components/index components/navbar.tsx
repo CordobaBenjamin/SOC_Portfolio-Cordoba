@@ -55,7 +55,8 @@ const Navbar = () => {
                 </div>
               </div>
               <div className="flex sm:hidden">
-                <Disclosure.Button className={`p-2 rounded-md ${colorPalette.textPrimary} ${colorPalette.hover}`}>
+              <LanguageSwitcher/>
+                <Disclosure.Button className={`p-2 rounded-md ${colorPalette.textPrimary} ${colorPalette.hover} ml-5`}>
                   <span className="sr-only">Open main menu</span>
                   {open ? (
                     <a className="block h-6 w-6" aria-hidden="true" />
