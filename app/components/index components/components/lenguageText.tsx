@@ -1,6 +1,6 @@
 import React from "react";
 
-const languageTexts = {
+const LanguageTexts:any = {
   es: {
     navbar: {
       a1: 'Inicio',
@@ -10,16 +10,15 @@ const languageTexts = {
     },
     main: {
       span1: ', mi nombre es ',
-      span2: 'y soy un ...'
+      span2: ' y soy un ...'
     },
     about: {
       h2: 'Estas son mis habilidades de código por el momento',
-      title: 'Acerca de', 
+      tittle: 'Sobre mi', 
       span1: 'Hola, mi nombre es Benjamín Córdoba, tengo 19 años. He estado estudiando desarrollo web durante 2 años. Y en el último año comencé a ser estudiante de ingeniería en informática.',
-      span2: '(Por ahora casi todo es lógica y matemáticas)',
+      span2: ' (Por ahora casi todo es lógica y matemáticas)',
       span3: 'He participado en conferencias/cursos/charlas y en general aprendiendo de diferentes profesionales aquí en Argentina.',
       span4: '(Detallaré esto más adelante.)',
-      span5: '(Por ahora casi todo es lógica y exactas)',
     },
     learning_card: {
       title: '¿Dónde Aprendo?',
@@ -47,9 +46,9 @@ const languageTexts = {
     login_project: {
       title1: 'Proyectos',
       title2: 'Principales',
-      h2: 'Proyecto de Registro',
+      h2: 'Proyecto de Inicio de Sesion',
       span1: 'Proyecto de página de inicio de sesión desarrollado con',
-      span2: 'Next.js, React Hook Form',
+      span2: 'Next.js, React Hook Form ',
       span3: 'estilizado usando',
       span4: 'Tailwind CSS.',
       span5: 'La aplicación también implementa encriptación',
@@ -58,27 +57,27 @@ const languageTexts = {
       span8: 'CryptoJS.'
     },
     ecommerce_project: {
-      h2: 'Proyecto Ecommerce',
-      span1: 'Aplicación de comercio electrónico',
-      span2: ' Transpilada a TSX',
-      span3: 'desde un antiguo proyecto basado en JavaScript,',
-      span4: 'para un código más ',
-      span5: 'y',
-      span6: 'Limpio',
-      span7: 'Está creado en ',
-      span8: 'Next.js',
-      span9: 'y está estilizado con ',
-      span10: 'CSS3 Puro',
+      ah2: 'Proyecto de Comercio electronico',
+      aspan1: 'Aplicación de comercio electrónico',
+      aspan2: ' Transpilada a TSX',
+      aspan3: 'desde un antiguo proyecto basado en JavaScript,',
+      aspan4: 'para un código más ',
+      aspan5: 'y',
+      aspan6: 'Limpio',
+      aspan7: 'Está creado en ',
+      aspan8: 'Next.js',
+      aspan9: 'y está estilizado con ',
+      aspan10: 'CSS3 Puro',
     },
     game_project: {
-      h2: 'Proyecto de Juego',
-      span1: 'Proyecto de juego Hangman en TypeScript, creado con',
-      span2: 'CSS Puro',
-      span3: ' y',
-      span4: 'Webpack',
-      span5: ', aunque el proyecto no es extenso, fue un desafío trabajar en',
-      span6: 'la lógica de las funciones en ',
-      span7: 'TypeScript.',
+      bh2: 'Proyecto de Juego',
+      bspan1: 'Proyecto de juego Hangman en TypeScript, creado con',
+      bspan2: 'CSS Puro',
+      bspan3: ' y',
+      bspan4: 'Webpack',
+      bspan5: ', aunque el proyecto no es extenso, fue un desafío trabajar en',
+      bspan6: 'la lógica de las funciones en ',
+      bspan7: 'TypeScript.',
     },
     contact: {
       title: 'Contacto',
@@ -177,4 +176,4 @@ const languageTexts = {
   }
 };
 
-export default languageTexts;
+export default LanguageTexts;

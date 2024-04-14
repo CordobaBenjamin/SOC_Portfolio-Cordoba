@@ -1,4 +1,7 @@
 import { ReactNode } from "react";
+import LanguageTexts from "./components/index components/components/lenguageText";
+import { useLanguage } from "./components/index components/components/lenguageSwitcher";
+import { LanguageSwitcher } from "./components/index components/components/lenguageSwitcher";
 
 import type { Metadata } from "next";
 import { motion } from "framer-motion";
@@ -26,6 +29,9 @@ interface IndexLayoutProps {
 }
 
 function IndexLayout({ children }: { children: React.ReactNode }) {
+
+  const { language, changeLanguage } = useLanguage();
+
   const { ref: aboutRef, inView: aboutInView } = useInView({
     triggerOnce: true,
     threshold: 0.5,
@@ -54,7 +60,9 @@ function IndexLayout({ children }: { children: React.ReactNode }) {
   return (
   
       <div className="bg-gray-200">
+        
         <Navbar />
+        
         <Main_tittle />
 
         {/* Sección About */}

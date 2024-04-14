@@ -1,7 +1,15 @@
 import React from "react";
 import Image from "next/image";
+import LanguageTexts from './components/lenguageText'
+import { useLanguage } from './components/lenguageSwitcher';
+import { LanguageSwitcher } from './components/lenguageSwitcher';
+
 
 const Contact = () => {
+
+  const { language, changeLanguage } = useLanguage();
+  const {a1, a2, a3, a4} = LanguageTexts[language].navbar;
+
   return (
     <>
       <div id="contact" className="w-full p-4 bg-gray-200 mt-24">

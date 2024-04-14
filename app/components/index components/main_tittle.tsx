@@ -1,6 +1,10 @@
 import { SVGProps } from "react"; // Importar tipos SVGProps de react
 import React from "react"; // Importar React (aunque no se use explícitamente aquí)
 
+import LanguageTexts from './components/lenguageText'
+import { useLanguage } from './components/lenguageSwitcher';
+import { LanguageSwitcher } from './components/lenguageSwitcher';
+
 // Otros imports...
 
 // Definición de la paleta de colores
@@ -13,6 +17,10 @@ const colorPalette = {
 };
 
 const Main_title = () => {
+
+  const { language, changeLanguage } = useLanguage();
+  const {span1, span2} = LanguageTexts[language].main;
+
   return (
     <div id="home" className={`flex justify-center flex-col mt-28 lg:mt-16 xl:mt-20 ` }>
       <div className="inline-block">
@@ -22,11 +30,11 @@ const Main_title = () => {
           <div>
             <span className={`${colorPalette.textSecondary}`}>👋</span>
 
-            <span>, my name is</span>
+            <span>{span1}</span>
 
             <span className={`${colorPalette.textSecondary}`}> Benjamin</span>
 
-            <span> and I am a ...</span>
+            <span>{span2}</span>
           </div>
         </h4>
       </div>

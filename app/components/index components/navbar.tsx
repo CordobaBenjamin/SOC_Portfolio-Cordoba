@@ -3,8 +3,10 @@ import 'animate.css';
 import { Disclosure } from '@headlessui/react';
 import { Bars3Icon } from '@heroicons/react/16/solid';
 
+import LanguageTexts from './components/lenguageText'
 import { useLanguage } from './components/lenguageSwitcher';
 import { LanguageSwitcher } from './components/lenguageSwitcher';
+
 
 // Definición de la paleta de colores
 const colorPalette = {
@@ -14,16 +16,19 @@ const colorPalette = {
   hover: 'hover:bg-gray-200', // Color de fondo al pasar el mouse (gris más claro)
 };
 
-const navigation = [
-  { name: 'Home', href: '#home', current: true}, // Marca la página actual como "current"
-  { name: 'About', href: '#about' },
-  { name: 'Proyects', href: '#proyect'}, 
-  { name: 'Contact', href: '#contact' },
-];
-
-const { language, changeLanguage } = useLanguage();
-
 const Navbar = () => {
+
+  const { language, changeLanguage } = useLanguage();
+  const {a1, a2, a3, a4} = LanguageTexts[language].navbar;
+
+  const navigation = [
+    // Marca la página actual como "current"
+     { name: a1, href: '#about', current: false },
+     { name: a2, href: '#proyect'}, 
+     { name: a3, href: '#contact' },
+   ];
+   
+
   return (
     <Disclosure as="nav" className={`${colorPalette.background} shadow-lg`}>
       {({ open }) => (
@@ -33,8 +38,10 @@ const Navbar = () => {
               <div className="flex-shrink-0">
                 <h2 className={`text-2xl lg:text-4xl font-bold animate__animated animate__zoomIn ${colorPalette.textPrimary}`}>Portfolio</h2>
               </div>
+              
               <div className="hidden sm:block">
                 <div className="flex space-x-4">
+                <LanguageSwitcher/>
                   {navigation.map((item) => (
                     <a
                       key={item.name}
