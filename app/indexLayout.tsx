@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+import { ReactNode, useEffect } from "react";
 import type { Metadata } from "next";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
@@ -61,6 +61,8 @@ function IndexLayout({ children }: { children: React.ReactNode }) {
     triggerOnce: true,
     threshold: 0.5,
   });
+
+
 
   return (
   

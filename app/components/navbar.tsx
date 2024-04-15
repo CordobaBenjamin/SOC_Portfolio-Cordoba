@@ -17,7 +17,7 @@ const Navbar = () => {
 
   const { mode } = useMode();
   const { textMain, textSecondary, twisted } = Colors[mode].text;
-  const { bg, main } = Colors[mode].color;
+  const { bg, main, overlap } = Colors[mode].color;
 
   let changeColor = textSecondary;
 
@@ -29,7 +29,7 @@ const Navbar = () => {
   ];
 
   return (
-    <Disclosure as="nav" className={`${bg} shadow-lg`}>
+    <Disclosure as="nav" className={`${bg} ${overlap} shadow-lg`}>
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">

@@ -86,6 +86,7 @@ const LanguageTexts:any = {
       span1: '¿Necesitas ponerte en contacto conmigo? Por favor, consulta mi información de contacto en la tarjeta a continuación.',
       span2: 'Contacto por Email',
       span3: 'Teléfono o Whatsapp',
+      span4: 'Perfil de GitHub'
     }
   },
   en: {
@@ -173,6 +174,7 @@ const LanguageTexts:any = {
       span1: 'Need to get in touch with me? Please see my contact information on the card below.',
       span2: 'Contact by Email',
       span3: 'Phone or Whatsapp',
+      span4: 'GitHub Profile'
     }
   }
 };

@@ -100,3 +100,7 @@
 .dark {
   background-color: #1d1d20;
 }
+
+.body-transition {
+  transition: background-color 5s, color 5s;
+}

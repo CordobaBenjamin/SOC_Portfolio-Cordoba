@@ -15,7 +15,7 @@ const Contact = () => {
   const {bg, main, borderSecondary, overlap, overlap2} = Colors[mode].color;
   
   const { language } = useLanguage();
-  const {title, span1, span2, span3} = LanguageTexts[language].contact;
+  const {title, span1, span2, span3, span4} = LanguageTexts[language].contact;
   
 
   return (
@@ -40,13 +40,32 @@ const Contact = () => {
               </div>
             </div>
 
+            <div className={`w-4/5 mx-auto px-10 pt-2 pb-10 mb-16 ${overlap} border-2 ${borderSecondary} rounded-2xl`}>
+              <div className="w-14 h-12 p-2  mx-auto my-5  bg-transparent relative ">
+                <Image
+                  src="/telefono_icon.png"
+                  alt="Front end Icon"
+                  layout="fill"
+                  className=" bg-transparent"
+                />
+              </div>
+
+              <h2 className={`flex justify-center text-xl font-medium ${textSecondary}`}>
+                {span4}
+              </h2>
+
+              <h1 className={`flex justify-center font-bold text-l px-2 ${textMain}`}>
+              <a href="https://github.com/CordobaBenjamin?tab=repositories" target="_blank">  https://github.com/CordobaBenjamin?tab=repositories </a>
+              </h1>
+            </div>
+
             <div className={`w-4/5 mx-auto px-10 pt-2 pb-10 mb-10 ${overlap} border-2 ${borderSecondary} rounded-2xl`}>
               <div className="w-14 h-12 mx-auto  my-5  bg-transparent relative ">
                 <Image
                   src="/gmail_icon.png"
                   alt="Front end Icon"
                   layout="fill"
-                  className="animate-pulse bg-transparent"
+                  className=" bg-transparent"
                 />
               </div>
 
@@ -56,17 +75,17 @@ const Contact = () => {
               </h2>
 
               <h1 className={`flex justify-center font-bold text-l px-2 ${textMain}`}>
-                cordobabencontact@gmail.com{" "}
+              <a href="mailto:cordobabencontact@gmail.com?subject=Asunto del correo&body=Cuerpo del correo" target="_blank">  cordobabencontact@gmail.com </a>
               </h1>
             </div>
 
-            <div className={`w-4/5 mx-auto px-10 pt-2 pb-10 mb ${overlap} border-2 ${borderSecondary} rounded-2xl`}>
+            <div className={`w-4/5 mx-auto px-10 pt-2 pb-10 mb-16 ${overlap} border-2 ${borderSecondary} rounded-2xl`}>
               <div className="w-14 h-12 p-2  mx-auto my-5  bg-transparent relative ">
                 <Image
                   src="/telefono_icon.png"
                   alt="Front end Icon"
                   layout="fill"
-                  className="animate-pulse bg-transparent"
+                  className="bg-transparent"
                 />
               </div>
 
