@@ -1,20 +1,21 @@
 import { ReactNode } from "react";
-import LanguageTexts from "./components/index components/components/lenguageText";
-import { useLanguage } from "./components/index components/components/lenguageSwitcher";
-import { LanguageSwitcher } from "./components/index components/components/lenguageSwitcher";
-
 import type { Metadata } from "next";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import Navbar from "./components/index components/navbar";
-import Main_tittle from "./components/index components/main_tittle";
-import About from "./components/index components/about";
-import Skills_bar from "./components/index components/components/skills_bar";
-import Help_card from "./components/index components/components/Help_card";
-import Learning_card from "./components/index components/components/learning_card";
-import WhyMe_card from "./components/index components/components/whyMe_card";
-import Proyects from "./components/index components/proyects";
-import Contact from "./components/index components/contact";
+
+import Colors from "./components/index components/SwitchMode/modeSwitcher/modeColors";
+import { useLanguage } from "./components/index components/SwitchMode/lenguageSwitcher/lenguageSwitcher";
+import { useMode } from "./components/index components/SwitchMode/modeSwitcher/modeSwitcher";
+
+import Navbar from "./components/navbar";
+import Main_tittle from "./components/main_tittle";
+import About from "./components/about";
+import Skills_bar from "./components/index components/skills_bar";
+import Help_card from "./components/index components/Help_card";
+import Learning_card from "./components/index components/learning_card";
+import WhyMe_card from "./components/index components/whyMe_card";
+import Proyects from "./components/proyects";
+import Contact from "./components/contact";
 
 import "animate.css";
 import "./globals.css";
@@ -31,7 +32,11 @@ interface IndexLayoutProps {
 function IndexLayout({ children }: { children: React.ReactNode }) {
 
   const { language, changeLanguage } = useLanguage();
+  const { mode, changeMode } = useMode();
+  const { textMain, textSecondary, twisted } = Colors[mode].text;
+  const { bg, main } = Colors[mode].color;
 
+  
   const { ref: aboutRef, inView: aboutInView } = useInView({
     triggerOnce: true,
     threshold: 0.5,
@@ -59,7 +64,7 @@ function IndexLayout({ children }: { children: React.ReactNode }) {
 
   return (
   
-      <div className="bg-gray-200">
+      <div className={bg}>
         
         <Navbar />
         

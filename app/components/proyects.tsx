@@ -1,10 +1,19 @@
 import React from "react";
 import Image from "next/image";
 
-import LanguageTexts from "./components/lenguageText";
-import { useLanguage } from "./components/lenguageSwitcher";
+import LanguageTexts from "./index components/SwitchMode/lenguageSwitcher/lenguageText";
+import { useLanguage } from "./index components/SwitchMode/lenguageSwitcher/lenguageSwitcher";
+import Colors from './index components/SwitchMode/modeSwitcher/modeColors';
+import { useMode } from './index components/SwitchMode/modeSwitcher/modeSwitcher';
+
 
 const Proyects = () => {
+  
+  const {mode} = useMode()
+  const {textMain, textSecondary} = Colors[mode].text;
+  const {bg, main, borderY, borderYSecondary, overlap, overlap2} = Colors[mode].color;
+
+
   const { language } = useLanguage();
   const {
     title1,
@@ -48,26 +57,26 @@ const Proyects = () => {
 
   return (
     <>
-      <div id="proyect" className="w-full p-4 bg-gray-200 mt-16">
-        <div className="flex flex-col  mx-auto sm:w-8/12 md:w-6/12 lg:w-4/12 xl:w-5/12 border-4 border-y-black">
+      <div id="proyect" className={`w-full p-4 ${bg} mt-16`}>
+        <div className={`flex flex-col  mx-auto sm:w-8/12 md:w-6/12 lg:w-4/12 xl:w-5/12 border-4  ${borderYSecondary}`}>
           <div>
-            <h1 className="text-7xl 2xl:text-8xl font-semibold flex justify- pt-2 w-full text-red-700">
+            <h1 className={`text-7xl 2xl:text-8xl font-semibold flex justify- pt-2 w-full ${textSecondary}`}>
               {title1}
             </h1>
           </div>
           <div>
-            <h1 className="text-7xl 2xl:text-9xl font-semibold flex justify-end pt-2 w-full ">
+            <h1 className={`text-7xl 2xl:text-9xl font-semibold flex justify-end pt-2 w-full ${textMain} `}>
               {title2}
             </h1>
           </div>
         </div>
 
         <div>
-          <div className="flex flex-col mx-auto mt-14  shadow-2xl shadow-gray-700 p-4 rounded-xl sm:w-11/12 md:w-9/12 lg:w-8/12 2xl:w-7/12 ">
-            <h2 className="flex justify-center font-bold text-xl lg:text-2xl 2xl:text-4xl text-red-700 border-2 border-y-red-900 animate__animated animate__fadeIn">
+          <div className={`flex flex-col mx-auto mt-14  ${overlap} p-4 rounded-xl sm:w-11/12 md:w-9/12 lg:w-8/12 2xl:w-7/12`}>
+            <h2 className={`flex justify-center font-bold text-xl lg:text-2xl 2xl:text-4xl ${textSecondary} border-2 ${borderY} animate__animated animate__fadeIn`}>
               {h2}
             </h2>
-            <div className="w-full h-72 xl:h-96 shadow-2xl  shadow-gray-500 rounded-2xl overflow-hidden my-5 relative">
+            <div className={`w-full h-72 xl:h-96  ${overlap2} rounded-2xl overflow-hidden my-5 relative ${textMain}`}>
               <Image
                 src="/sign_up.png"
                 className="inset-0 w-full h-full object-cover grayscale-image transition-transform duration-300 transform scale-100 hover:scale-125"
@@ -79,7 +88,7 @@ const Proyects = () => {
                 }}
               />
             </div>
-            <div className="lg:text-xl 2xl:text-2xl">
+            <div className={`lg:text-xl 2xl:text-2xl ${textMain}`}>
               <span>{span1}</span>
               <span className="font-bold"> {span2}</span>
               <span>{span3}</span>
@@ -91,11 +100,11 @@ const Proyects = () => {
             </div>
           </div>
 
-          <div className="flex  flex-col mx-auto mt-14  shadow-2xl shadow-gray-700 p-4 rounded-xl sm:w-11/12 md:w-9/12 lg:w-8/12 2xl:w-7/12">
-            <h2 className="flex justify-center font-bold text-xl lg:text-2xl 2xl:text-4xl  text-red-700 border-2 border-y-red-900 animate__animated animate__fadeIn">
+          <div className={`flex flex-col mx-auto mt-14  ${overlap} p-4 rounded-xl sm:w-11/12 md:w-9/12 lg:w-8/12 2xl:w-7/12`}>
+          <h2 className={`flex justify-center font-bold text-xl lg:text-2xl 2xl:text-4xl ${textSecondary} border-2 ${borderY} animate__animated animate__fadeIn`}>
               {ah2}
             </h2>
-            <div className="w-full h-72 xl:h-96  shadow-2xl shadow-gray-500 rounded-2xl overflow-hidden my-5 relative">
+            <div className={`w-full h-72 xl:h-96  ${overlap2} rounded-2xl overflow-hidden my-5 relative ${textMain}`}>
               <Image
                 src="/market_gaming.png"
                 className="inset-0 w-full h-full object-cover  grayscale-image transition-transform duration-300 transform scale-100 hover:scale-125"
@@ -107,7 +116,7 @@ const Proyects = () => {
                 }}
               />
             </div>
-            <div className="lg:text-xl 2xl:text-2xl">
+            <div className={`lg:text-xl 2xl:text-2xl ${textMain}`}>
               <span>{aspan1}</span>
               <span className="font-bold"> {aspan2}</span>
               <span> {aspan3}</span>
@@ -122,12 +131,12 @@ const Proyects = () => {
             </div>
           </div>
 
-          <div className="flex  flex-col mx-auto mt-14  shadow-2xl shadow-gray-700 p-4 rounded-xl sm:w-11/12 md:w-9/12 lg:w-8/12 2xl:w-7/12 ">
-            <h2 className="flex justify-center font-bold text-xl lg:text-2xl 2xl:text-4xl  text-red-700 border-2 border-y-red-900 animate__animated animate__fadeIn">
+          <div className={`flex flex-col mx-auto mt-14  ${overlap} p-4 rounded-xl sm:w-11/12 md:w-9/12 lg:w-8/12 2xl:w-7/12`}>
+          <h2 className={`flex justify-center font-bold text-xl lg:text-2xl 2xl:text-4xl ${textSecondary} border-2 ${borderY} animate__animated animate__fadeIn`}>
               {" "}
               {bh2}
             </h2>
-            <div className="w-full h-72 xl:h-96  shadow-2xl shadow-gray-500 rounded-2xl overflow-hidden my-5 relative">
+            <div className={`w-full h-72 xl:h-96  ${overlap2} rounded-2xl overflow-hidden my-5 relative ${textMain}`}>
               <Image
                 src="/hangman.png"
                 className="inset-0 w-full h-full object-cover  grayscale-image transition-transform duration-300 transform scale-100 hover:scale-125"
@@ -139,7 +148,7 @@ const Proyects = () => {
                 }}
               />
             </div>
-            <div className="lg:text-xl 2xl:text-2xl">
+            <div className={`lg:text-xl 2xl:text-2xl ${textMain}`}>
               <span className="font-bold"> {bspan1}</span>
               <span> {bspan10}</span>
               <span className="font-bold"> {bspan2}</span>

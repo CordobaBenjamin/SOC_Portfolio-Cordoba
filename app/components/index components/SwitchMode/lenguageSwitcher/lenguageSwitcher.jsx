@@ -1,5 +1,6 @@
 import React, { createContext, useState, useContext } from "react";
 
+
 // Crear el contexto de idioma
 const LanguageContext = createContext();
 
@@ -34,7 +35,7 @@ const LanguageSwitcher = () => {
     };
 
     return (
-      <button onClick={toggleLanguage} className="font-bold text-xl text-red-700">
+      <button onClick={toggleLanguage} className={`font-bold text-xl } `}>
         {language === "es" ? "English" : "Español"}
       </button>
     );

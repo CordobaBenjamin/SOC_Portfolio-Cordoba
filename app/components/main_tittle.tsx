@@ -1,13 +1,23 @@
 import React from "react"; // Importar React (aunque no se use explícitamente aquí)
 
-import LanguageTexts from './components/lenguageText'
-import { useLanguage } from './components/lenguageSwitcher';
+
+import LanguageTexts from './index components/SwitchMode/lenguageSwitcher/lenguageText';
+import { useLanguage } from './index components/SwitchMode/lenguageSwitcher/lenguageSwitcher';
+
+import Colors from './index components/SwitchMode/modeSwitcher/modeColors';
+import { useMode } from './index components/SwitchMode/modeSwitcher/modeSwitcher';
 
 
-// Otros imports...
+const Main_title = () => {
 
-// Definición de la paleta de colores
-const colorPalette = {
+  const {mode} = useMode()
+  const {textMain, textSecondary} = Colors[mode].text;
+  const {bg, main} = Colors[mode].color;
+
+  const { language } = useLanguage();
+  const {span1, span2} = LanguageTexts[language].main;
+
+  const colorPalette = {
   textPrimary: "text-black", // Color de texto principal (negro)
   textSecondary: "text-red-700", // Color de texto secundario (gris suave)
   bgColor: "bg-white", // Fondo blanco
@@ -15,25 +25,20 @@ const colorPalette = {
   bgClipText: "bg-clip-text", // Fondo para el texto
 };
 
-const Main_title = () => {
-
-  const { language } = useLanguage();
-  const {span1, span2} = LanguageTexts[language].main;
-
   return (
-    <div id="home" className={`flex justify-center flex-col mt-28 lg:mt-16 xl:mt-20 ` }>
+    <div id="home" className={`flex justify-center flex-col mt-28 lg:mt-16 xl:mt-20` }>
       <div className="inline-block">
         <h4
-          className={`flex justify-center text-xl sm:text-2xl lg:text-3xl  mb-5 font-semibold  ${colorPalette.textPrimary}`}
+          className={`flex justify-center text-xl sm:text-2xl lg:text-3xl  mb-5 font-semibold  ${textMain}`}
         >
           <div>
-            <span className={`${colorPalette.textSecondary}`}>👋</span>
+            <span>👋</span>
 
-            <span>{span1}</span>
+            <span className={`${textMain}`}>{span1}</span>
 
-            <span className={`${colorPalette.textSecondary}`}> Benjamin</span>
+            <span className={`${textSecondary}`}> Benjamin</span>
 
-            <span>{span2}</span>
+            <span className={`${textMain}`}>{span2}</span>
           </div>
         </h4>
       </div>
@@ -42,10 +47,10 @@ const Main_title = () => {
         <h1
           className={` text-7xl min-[505px]:text-8xl min-[665px]:text-9xl lg:text-12xl xl:text-14 2xl:text-15xl font-bold ${colorPalette.textTransparent} ${colorPalette.bgClipText} text-center w-full`}
         >
-          <span className={`inline-block ${colorPalette.textSecondary} animate__animated animate__slideInLeft`}>
+          <span className={`inline-block ${textSecondary} animate__animated animate__slideInLeft`}>
             Front End
           </span>{" "}
-          <span className={`block ${colorPalette.textPrimary} animate__animated animate__slideInLeft`}>Developer</span>
+          <span className={`block ${textMain} animate__animated animate__slideInLeft`}>Developer</span>
         </h1>
       </div>
 

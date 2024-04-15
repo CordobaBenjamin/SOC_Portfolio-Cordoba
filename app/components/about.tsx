@@ -1,18 +1,24 @@
 import Image from "next/image";
-import LanguageTexts from './components/lenguageText'
-import { useLanguage } from './components/lenguageSwitcher';
-
+import LanguageTexts from './index components/SwitchMode/lenguageSwitcher/lenguageText';
+import { useLanguage } from './index components/SwitchMode/lenguageSwitcher/lenguageSwitcher';
+import Colors from './index components/SwitchMode/modeSwitcher/modeColors';
+import { useMode } from './index components/SwitchMode/modeSwitcher/modeSwitcher';
 
 const About = () => {
+  
+  const {mode} = useMode()
+  const {textMain, textSecondary} = Colors[mode].text;
+  const {bg, main, border} = Colors[mode].color;
+
   const { language,  } = useLanguage();
   const { tittle, span1, span2, span3, span4, } =
     LanguageTexts[language].about;
 
   return (
     <>
-      <div className="w-full p-4 bg-gray-200 mt-24" id="about">
+      <div className={`w-full p-4 ${bg} mt-24`} id="about">
         <div className="flex flex-row justify-center">
-          <h1 className="text-6xl font-semibold flex justify-center pt-2 w-full my-6 border-y-2 border-red-700 md:text-7xl lg:text-9xl">
+          <h1 className={`text-6xl font-semibold flex justify-center pt-2 w-full my-6 border-y-2 ${border} ${textMain} md:text-7xl lg:text-9xl`}>
             {tittle}
           </h1>
         </div>
@@ -20,10 +26,10 @@ const About = () => {
         <div className="flex flex-col-reverse xl:flex-row">
           <div className="xl:w-4/5 flex justify-center flex-col">
             <div>
-              <h1 className="text-2xl font-bold text-red-700 pt-6 md:text-5xl ">
+              <h1 className={`text-2xl font-bold ${textSecondary} pt-6 md:text-5xl`}>
                 Benjamin L. Cordoba
               </h1>
-              <div className="flex flex-col pb-10 mb-2 md:text-xl xl:text-3xl">
+              <div className={`flex flex-col pb-10 mb-2 md:text-xl xl:text-3xl ${textMain}`}>
                 <div>
                   <span>{span1}</span>
                   <span className="font-semibold">{span2}</span>

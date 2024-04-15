@@ -97,3 +97,6 @@
   animation: fadeIn 3s infinite;
 }
 
+.dark {
+  background-color: #1d1d20;
+}

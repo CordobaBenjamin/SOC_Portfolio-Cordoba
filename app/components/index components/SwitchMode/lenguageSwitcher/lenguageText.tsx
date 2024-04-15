@@ -127,7 +127,7 @@ const LanguageTexts:any = {
       span3: 'is being solution-oriented.',
       span4: 'One of the things that strikes me the most in my university career is ',
       span5: 'how it prepares you to solve problems using logic.',
-      span6: ' This is why I know',
+      span6: ' This is why I know, ',
       span7: 'I can tackle any challenge that comes my way.'
     },
     login_project: {
