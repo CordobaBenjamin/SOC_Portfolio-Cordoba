@@ -36,7 +36,7 @@ const ModeSwitcher = () => {
     };
 
     return (
-      <button onClick={toggleMode} className={`font-bold text-xl ${changeColor} `}>
+      <button onClick={toggleMode} className={`font-bold text-base lg:text-xl`}>
         {mode === "light" ? "Dark" : "Light"}
       </button>
     );

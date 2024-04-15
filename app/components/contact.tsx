@@ -11,7 +11,7 @@ const Contact = () => {
 
   
   const {mode} = useMode()
-  const {textMain, textSecondary} = Colors[mode].text;
+  const {textMain, textSecondary, telefono} = Colors[mode].text;
   const {bg, main, borderSecondary, overlap, overlap2} = Colors[mode].color;
   
   const { language } = useLanguage();
@@ -82,7 +82,7 @@ const Contact = () => {
             <div className={`w-4/5 mx-auto px-10 pt-2 pb-10 mb-16 ${overlap} border-2 ${borderSecondary} rounded-2xl`}>
               <div className="w-14 h-12 p-2  mx-auto my-5  bg-transparent relative ">
                 <Image
-                  src="/telefono_icon.png"
+                  src={telefono}
                   alt="Front end Icon"
                   layout="fill"
                   className="bg-transparent"

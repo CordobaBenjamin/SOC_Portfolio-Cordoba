@@ -11,7 +11,7 @@ import { useMode } from "./SwitchMode/modeSwitcher/modeSwitcher";
 const Skills_bar = () => {
   
   const {mode} = useMode()
-  const {textMain, textSecondary, textSecondary2} = Colors[mode].text;
+  const {textMain, textSecondary, textSecondary2, next} = Colors[mode].text;
   const {bg, main, borderSecondary} = Colors[mode].color;
 
 
@@ -25,27 +25,27 @@ const languages = [
   {
     name: "React",
     icon: "/react_icon.png",
-    class: "{`h-16 min-w-16 rounded-2xl border-2 ${borderSecondary} grayscale duration-1000 transition-all animate-photo`}",
+    class: `h-20 min-w-20 p-2 rounded-xl  grayscale duration-1000 transition-all animate-photo`,
   },
   {
     name: "Next.js",
-    icon: "/next_icon.png",
-    class: "{`h-16 min-w-16 rounded-2xl border-2 ${borderSecondary} grayscale duration-1000 transition-all animate-photo`}",
+    icon: `${next}`,
+    class: `h-20 min-w-20 p-2rounded-xl  grayscale duration-1000 transition-all animate-photo`,
   },
   {
     name: "Tailwind",
     icon: "/tailwind_icon.png",
-    class: "{`h-16 min-w-16 rounded-2xl border-2 ${borderSecondary} grayscale duration-1000 transition-all animate-photo`}",
+    class: `h-20 min-w-20 py-6 p-2 rounded-xl grayscale duration-1000 transition-all animate-photo`,
   },
   {
     name: "JSX",
     icon: "/jsx_icon.png",
-    class: "{`h-16 min-w-16 rounded-2xl border-2 ${borderSecondary} grayscale duration-1000 transition-all animate-photo`}",
+    class: `h-20 min-w-20 p-2 rounded-xl  grayscale duration-1000 transition-all animate-photo`,
   },
   {
     name: "TSX",
     icon: "/tsx_icon.png",
-    class: "{`h-16 min-w-16 rounded-2xl border-2 ${borderSecondary} grayscale duration-1000 transition-all animate-photo`}",
+    class: `h-20 min-w-20 p-2 rounded-xl grayscale duration-1000 transition-all animate-photo`,
   },
 ];
 
@@ -61,7 +61,7 @@ const languages = [
       <div className="animate-slide whitespace-nowrap flex items-center  mb-5 h-1/4">
         {languages.map((lang, index) => (
           <div key={index} className="mx-6 flex items-center flex-col">
-            <div className="w-16 h-16 relative md:w-20 md:h-20 xl:w-24 xl:h-24 "> 
+            <div className="w-20 h-20 relative md:w-24 md:h-24 xl:w-28 xl:h-28 "> 
             <Image
               src={lang.icon}
               alt={lang.name}
@@ -73,7 +73,7 @@ const languages = [
               }} />
             </div>
             <div className=""> 
-            <h2 className={`${textSecondary2}`}>{lang.name}</h2>
+            <h2 className={`${textSecondary2} text-xl`}>{lang.name}</h2>
             </div>
           </div>
         ))}

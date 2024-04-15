@@ -10,8 +10,8 @@ import { useMode } from "./SwitchMode/modeSwitcher/modeSwitcher";
 const WhyMe_card = () => {
   
   const {mode} = useMode()
-  const {textMain, textSecondary} = Colors[mode].text;
-  const {bg, main, borderSecondary, overlap} = Colors[mode].color;
+  const {textMain, textSecondary, me} = Colors[mode].text;
+  const {bg, main, borderSecondary, overlap, bgSecondary} = Colors[mode].color;
 
   const { language } = useLanguage();
   const { title, span1, span2, span3, span4, span5, span6, span7 } =
@@ -19,9 +19,9 @@ const WhyMe_card = () => {
 
   return (
     <div className={`w-4/5 md:w-2/3 xl:w-2/5 xl:m-0 mx-auto px-10 pt-2 pb-10 mt-10 ${overlap} border-2 ${borderSecondary} rounded-2xl`}>
-      <div className="w-16 h-16 p-2 border-2  mx-auto my-5 rounded-full shadow-2xl border-gray-300  bg-gray-300 bg-opacity-90  relative lg:w-24 lg:h-24">
+      <div className={`w-16 h-16 border-2  mx-auto my-5 rounded-full shadow-2xl ${borderSecondary} ${bgSecondary} bg-opacity-90 relative lg:w-24 lg:h-24`}>
         <Image
-          src="/me_icon.png"
+          src={me}
           alt="Front end Icon"
           fill
           sizes="100vw"

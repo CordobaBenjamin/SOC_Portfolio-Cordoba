@@ -8,7 +8,7 @@ const About = () => {
   
   const {mode} = useMode()
   const {textMain, textSecondary} = Colors[mode].text;
-  const {bg, main, border} = Colors[mode].color;
+  const {bg, main, border, opacity} = Colors[mode].color;
 
   const { language,  } = useLanguage();
   const { tittle, span1, span2, span3, span4, } =
@@ -50,7 +50,7 @@ const About = () => {
               alt="Retrato"
               width={150}
               height={100}
-              className="rounded-3xl shadow-2xl flex justify-center xl:shadow-none xl:rounded-2xl xl:justify-end grayscale duration-1000 transition-all animate-photo"
+              className={`rounded-3xl ${opacity} shadow-2xl flex justify-center xl:shadow-none xl:rounded-2xl xl:justify-end duration-1000 transition-all `}
               sizes="50vw"
               style={{
                 width: "100%",

@@ -17,7 +17,7 @@ const Navbar = () => {
 
   const { mode } = useMode();
   const { textMain, textSecondary, twisted } = Colors[mode].text;
-  const { bg, main, overlap } = Colors[mode].color;
+  const { bg, main, overlap, border } = Colors[mode].color;
 
   let changeColor = textSecondary;
 
@@ -56,7 +56,7 @@ const Navbar = () => {
                     <a
                       key={item.name}
                       href={item.href}
-                      className={`px-3 py-2 rounded-md text-sm lg:text-xl font-medium ${textMain}`}
+                      className={`px-3 py-2 rounded-md sm:px-1  lg:text-xl font-medium ${textMain}`}
                     >
                       {item.name}
                     </a>
