@@ -92,7 +92,14 @@ const LanguageTexts:any = {
       span2: 'Contacto por Email',
       span3: 'Teléfono o Whatsapp',
       span4: 'Perfil de GitHub'
-    }
+    },
+    footer: {
+      title1: 'PortFolio ',
+      title2: ' creado por',
+      title3: 'Benjamin Cordoba',
+      span1: 'Hosting por Vercel y creado con Next.js',
+      span2: 'para ver el repositorio del portfolio clickea aqui'
+    },
   },
   en: {
     navbar: {
