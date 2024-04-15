@@ -33,15 +33,15 @@ const Contact = () => {
           <div className="md:w-2/3 md:mt-0 lg:w-3/5 xl:w-1/3">
             <div>
 
-              <div className={`flex flex-col pb-10 mb-2 `}>
-                <span className={`mx-auto xl:text-xl font-medium ${textMain}`}>
+              <div className={`flex flex-col pb-10 mb-2 mx-8 sm:mx-auto`}>
+                <span className={`mx-auto  xl:text-xl font-medium ${textMain}`}>
                   {span1}
                 </span>
               </div>
             </div>
 
             <div className={`w-4/5 mx-auto px-10 pt-2 pb-10 mb-10 ${overlap} border-2 ${borderSecondary} rounded-2xl`}>
-              <div className="w-14 h-12 p-2  mx-auto my-5  bg-transparent relative ">
+              <div className="w-14 h-12 mx-auto  my-5  bg-transparent relative ">
                 <Image
                   src="/gmail_icon.png"
                   alt="Front end Icon"

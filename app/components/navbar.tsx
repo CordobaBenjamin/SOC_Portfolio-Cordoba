@@ -64,7 +64,13 @@ const Navbar = () => {
                 </div>
               </div>
               <div className="flex sm:hidden">
-                <LanguageSwitcher />
+              <div className={`${twisted} px-3 py-2 `}>
+                    <ModeSwitcher />
+                  </div>
+
+                  <div className={`${textSecondary} px-3 py-2 `}>
+                    <LanguageSwitcher />
+                  </div>
                 <Disclosure.Button
                   className={`p-2 rounded-md ${textMain}  ml-5`}
                 >
