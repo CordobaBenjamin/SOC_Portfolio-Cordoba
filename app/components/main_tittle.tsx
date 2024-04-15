@@ -1,32 +1,32 @@
 import React from "react"; // Importar React (aunque no se use explícitamente aquí)
 
+import LanguageTexts from "./index components/SwitchMode/lenguageSwitcher/lenguageText";
+import { useLanguage } from "./index components/SwitchMode/lenguageSwitcher/lenguageSwitcher";
 
-import LanguageTexts from './index components/SwitchMode/lenguageSwitcher/lenguageText';
-import { useLanguage } from './index components/SwitchMode/lenguageSwitcher/lenguageSwitcher';
-
-import Colors from './index components/SwitchMode/modeSwitcher/modeColors';
-import { useMode } from './index components/SwitchMode/modeSwitcher/modeSwitcher';
-
+import Colors from "./index components/SwitchMode/modeSwitcher/modeColors";
+import { useMode } from "./index components/SwitchMode/modeSwitcher/modeSwitcher";
 
 const Main_title = () => {
-
-  const {mode} = useMode()
-  const {textMain, textSecondary} = Colors[mode].text;
-  const {bg, main} = Colors[mode].color;
+  const { mode } = useMode();
+  const { textMain, textSecondary, textSecondary2 } = Colors[mode].text;
+  const { bg, main, borderX } = Colors[mode].color;
 
   const { language } = useLanguage();
-  const {span1, span2} = LanguageTexts[language].main;
+  const { span1, span2 } = LanguageTexts[language].main;
 
   const colorPalette = {
-  textPrimary: "text-black", // Color de texto principal (negro)
-  textSecondary: "text-red-700", // Color de texto secundario (gris suave)
-  bgColor: "bg-white", // Fondo blanco
-  textTransparent: "text-transparent", // Texto transparente
-  bgClipText: "bg-clip-text", // Fondo para el texto
-};
+    textPrimary: "text-black", // Color de texto principal (negro)
+    textSecondary: "text-red-700", // Color de texto secundario (gris suave)
+    bgColor: "bg-white", // Fondo blanco
+    textTransparent: "text-transparent", // Texto transparente
+    bgClipText: "bg-clip-text", // Fondo para el texto
+  };
 
   return (
-    <div id="home" className={`flex justify-center flex-col mt-28 lg:mt-16 xl:mt-20` }>
+    <div
+      id="home"
+      className={`flex justify-center flex-col mt-28 lg:mt-16 xl:mt-20`}
+    >
       <div className="inline-block">
         <h4
           className={`flex justify-center text-xl sm:text-2xl lg:text-3xl  mb-5 font-semibold  ${textMain}`}
@@ -47,80 +47,34 @@ const Main_title = () => {
         <h1
           className={` text-7xl min-[505px]:text-8xl min-[665px]:text-9xl lg:text-12xl xl:text-14 2xl:text-15xl font-bold ${colorPalette.textTransparent} ${colorPalette.bgClipText} text-center w-full`}
         >
-          <span className={`inline-block ${textSecondary} animate__animated animate__slideInLeft`}>
+          <span
+            className={`inline-block ${textSecondary} animate__animated animate__slideInLeft`}
+          >
             Front End
           </span>{" "}
-          <span className={`block ${textMain} animate__animated animate__slideInLeft`}>Developer</span>
+          <span
+            className={`block ${textMain} animate__animated animate__slideInLeft`}
+          >
+            Developer
+          </span>
         </h1>
       </div>
 
-      <div className="grid grid-cols-8 h-1/3">
-        
-        <div className="col-start-1 col-end-3 mx-auto">
-            
-        </div>
+      <div className="flex justify-between  xl:mx-40 my-14">
+        <button
+          className={`${textSecondary} ${borderX} text-md sm:text-lg xl:text-2xl font-bold px-4 py-2 border-2 ml-5 xl:ml-20 boton-brillante`}
+        >
+          Curriculum Vitae
+        </button>
 
-        <div className="col-span-4 flex justify-center items-center relative">
-          <div className="absolute inset-0 z-0 flex justify-center items-center  xl:size-9/12 2xl:size-7/12 mx-auto">
-          </div>
-        </div>
-        <div className="col-start-7 col-end-9 w-fit ">
-          
-        </div>
+        <button
+          className={`${textSecondary} ${borderX} text-md sm:text-lg xl:text-2xl font-bold px-4 py-2 border-2 mr-5 xl:ml-20`}
+        >
+          Curriculum Vitae
+        </button>
+
       </div>
 
-      <div className="mt-40 flex flex-col xl:mt-28">
-        <div className="flex justify-center">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={1.5}
-            stroke="currentColor"
-            className="w-10 h-10 animate-ping xl:w-16 xl:h-16"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="m4.5 5.25 7.5 7.5 7.5-7.5m-15 6 7.5 7.5 7.5-7.5"
-            />
-          </svg>
-        </div>
-
-        <div className="flex justify-center">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={1.5}
-            stroke="currentColor"
-            className="w-10 h-10 animate-ping xl:w-16 xl:h-16"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="m4.5 5.25 7.5 7.5 7.5-7.5m-15 6 7.5 7.5 7.5-7.5"
-            />
-          </svg>
-        </div>
-
-        <div className="flex justify-center">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={1.5}
-            stroke="currentColor"
-            className="w-10 h-10 animate-ping xl:w-16 xl:h-16"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="m4.5 5.25 7.5 7.5 7.5-7.5m-15 6 7.5 7.5 7.5-7.5"
-            />
-          </svg>
-        </div>
-      </div>
     </div>
   );
 };

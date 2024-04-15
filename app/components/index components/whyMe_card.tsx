@@ -35,7 +35,7 @@ const WhyMe_card = () => {
         {title}
       </h2>
       <div className="">
-        <div className={`md:text-xl  lg:text-2xl ${textMain}`}>
+        <div className={`md:text-xl  lg:text-2xl lg:text-justify ${textMain} `}>
           <span> {span1} </span>
 
           <span className={`${textSecondary} font-bold`}> {span2} </span>

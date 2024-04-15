@@ -27,6 +27,8 @@
   }
 }
 
+
+
 .animate-slide {
   animation: slide 15s linear infinite;
 }
@@ -67,9 +69,16 @@
 
 @layer base {
   h1 {
+    text-align: start;
     font-family: Newsreader, system-ui, sans-serif;
   }
 }
+
+
+.xljustify {
+  text-align: justify;
+ }
+ 
 
 @keyframes toggleGrayscale {
   0% {
@@ -83,9 +92,23 @@
   }
 }
 
+@keyframes brillo-opacidad {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.boton-brillante {
+  animation: brillo-opacidad 2s infinite;
+}
+
 .animate-photo {
   animation: toggleGrayscale 4s infinite;
 }
+
 
 @keyframes fadeIn {
   0% { opacity: 0; }

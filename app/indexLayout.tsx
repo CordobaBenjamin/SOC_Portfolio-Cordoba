@@ -16,6 +16,7 @@ import Learning_card from "./components/index components/learning_card";
 import WhyMe_card from "./components/index components/whyMe_card";
 import Proyects from "./components/proyects";
 import Contact from "./components/contact";
+import Footer from "./components/footer";
 
 import "animate.css";
 import "./globals.css";
@@ -117,6 +118,7 @@ function IndexLayout({ children }: { children: React.ReactNode }) {
           transition={{ duration: 0.4 }}
         >
           <Contact />
+          <Footer />
         </motion.div>
 
         {children}

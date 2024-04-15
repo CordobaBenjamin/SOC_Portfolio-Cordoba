@@ -5,11 +5,13 @@ const Colors: any = {
     text: {
       textMain: "text-black transition-colors duration-200",
       textSecondary: "text-emerald-700 transition-colors duration-200",
-      textSecondary2: "text-emerald-600 transition-colors duration-200",
+      textSecondary2: "text-emerald-500 transition-colors duration-200",
       twisted: "text-emerald-900 transition-colors duration-200",
+      git: "/gitHub_icon.png",
+      mail: "/contact_icon.png",
       me: "/me_icon.png",
       study: "/study_logo.png",
-      telefono: "/gmail_icon.png",
+      telefono: "/telefono_icon.png",
       next: "/next_icon.png",
       front: "/front_logo.png",
     },
@@ -22,6 +24,7 @@ const Colors: any = {
       main: "black transition-colors duration-200",
       border: "border-emerald-700 transition-border-color duration-200",
       borderY: "border-x-gray-200 border-y-emerald-700 transition-border-color duration-200",
+      borderX: "border-x-transparent border-t-transparent border-b-emerald-700 transition-border-color duration-200",
       borderSecondary: "border-black transition-border-color duration-200",
       borderYSecondary: "border-x-gray-200 border-y-black transition-border-color duration-200"
     }
@@ -30,11 +33,13 @@ const Colors: any = {
     text: {
       textMain: "text-gray-400 transition-colors duration-200",
       textSecondary: "text-emerald-900 transition-colors duration-200",
-      textSecondary2: "text-emerald-600 transition-colors duration-200",
+      textSecondary2: "text-emerald-700 transition-colors duration-200",
       twisted: "text-emerald-700 transition-colors duration-200",
+      git: "/gitHub_icon_white.png",
+      mail: "/contact_icon_white.png",
       me: "/me_icon_white.png",
       study: "/study_logo_white.png",
-      telefono: "/gmail_icon_white.png",
+      telefono: "/telefono_icon_white.png",
       next: "/next_icon_white.png",
       front: "/front_logo_white.png",
     },
@@ -47,6 +52,7 @@ const Colors: any = {
       main: "gray-300 transition-colors duration-200",
       border: "border-emerald-800 transition-border-color duration-200",
       borderY: "border-x-zinc-800 border-y-emerald-900 transition-border-color duration-200",
+      borderX: "border-x-transparent border-t-transparent border-b-emerald-900 transition-border-color duration-200",
       borderSecondary: "border-zinc-800 transition-border-color duration-200",
       borderYSecondary: "border-x-zinc-900 border-y-gray-300 transition-border-color duration-200"
     }

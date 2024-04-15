@@ -105,7 +105,8 @@ const LanguageTexts:any = {
       span2: ' and I am a ...'
     },
     about: {
-      h2: 'Here are my main skills.',
+      h2: 'Hello World!',
+      h2Secondary: 'Here are my main skills.',
       tittle: 'About Me', 
       span1: 'Hello, my name is Benjamín Córdoba, I am 19 years old. I have been studying web development for 2 years. In the past year, I started studying computer engineering.',
       span2: ' (So far, it’s mostly logic and mathematics)',
@@ -185,7 +186,14 @@ const LanguageTexts:any = {
       span2: 'Contact by Email',
       span3: 'Phone or Whatsapp',
       span4: 'GitHub Profile'
-    }
+    },
+    footer: {
+      title1: 'PortFolio ',
+      title2: ' created by',
+      title3: 'Benjamin Cordoba',
+      span1: 'Hosting by Vercel and Created with Next.js',
+      span2: 'For the repository of the proyect click here'
+    },
   }
 };
 
