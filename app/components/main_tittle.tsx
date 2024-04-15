@@ -62,15 +62,15 @@ const Main_title = () => {
 
       <div className="flex justify-between  xl:mx-40 my-14">
         <button
-          className={`${textSecondary} ${borderX} text-md sm:text-lg xl:text-2xl font-bold px-4 py-2 border-2 ml-5 xl:ml-20 boton-brillante`}
+          className={`${textSecondary} ${borderX} text-xs sm:text-lg xl:text-2xl font-bold px-4 py-2 border-2 ml-5 xl:ml-20 boton-brillante`}
         >
           Curriculum Vitae
         </button>
 
         <button
-          className={`${textSecondary} ${borderX} text-md sm:text-lg xl:text-2xl font-bold px-4 py-2 border-2 mr-5 xl:ml-20`}
+          className={`${textSecondary} ${borderX} text-xs sm:text-lg xl:text-2xl font-bold px-4 py-2 border-2 mr-5 xl:ml-20`}
         >
-          Curriculum Vitae
+          Argentina
         </button>
 
       </div>

@@ -25,11 +25,11 @@ const Footer = () => {
         </div>
 
         <div className={`flex justify-center  `}>
-          <span className={`${textMain} font-semibold`}> {span1} </span>
+          <span className={`${textMain}  text-sm font-semibold xl:text-lg`}> {span1} </span>
         </div>
 
         <div className={`flex justify-center `}>
-            <a href=""> <span className={`${textMain} font-semibold`}> {span2} </span></a>
+            <a href=""> <span className={`${textMain} text-sm font-semibold xl:text-lg`}> {span2} </span></a>
         </div>
 
       </div>
