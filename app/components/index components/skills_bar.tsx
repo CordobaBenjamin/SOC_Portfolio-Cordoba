@@ -49,7 +49,7 @@ const Skills_bar = () => {
           <h2
             className={`mr-5 mb-6 ${textSecondary} text-2xl  md:text-4xl xl:text-6xl`}
           >
-            {h2Secondary}
+            {h2}
           </h2>
         </div>
 
