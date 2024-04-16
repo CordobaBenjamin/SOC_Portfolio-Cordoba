@@ -18,15 +18,15 @@ const About = () => {
     <>
       <div className={`w-full p-4 ${bg} mt-24`} id="about">
         <div className="flex flex-row justify-center">
-          <h1 className={`text-6xl font-semibold flex justify-center pt-2 w-full my-6 border-y-2 ${border} ${textMain} md:text-7xl lg:text-9xl`}>
+          <h1 className={`text-6xl font-semibold flex justify-center pb-4 w-full my-6 border-y-2 ${border} ${textMain} md:text-7xl lg:text-9xl`}>
             {tittle}
           </h1>
         </div>
 
         <div className="flex flex-col-reverse xl:flex-row">
-          <div className="xl:w-4/5 flex justify-center flex-col">
+          <div className="xl:w-4/5 flex justify-center flex-col xl:pr-32">
             <div>
-              <h1 className={`text-2xl font-bold ${textSecondary} pt-6 md:text-5xl`}>
+              <h1 className={`text-2xl font-bold ${textSecondary} pt-6 md:text-5xl `}>
                 Benjamin L. Cordoba
               </h1>
               <div className={`flex flex-col pb-10 mb-2 md:text-xl xl:text-3xl ${textMain}`}>
@@ -46,11 +46,11 @@ const About = () => {
 
           <div className="mx-auto w-4/6 sm:w-3/6 lg:w-1/3">
             <Image
-              src="/about_pic.png"
+              src="/try4.png"
               alt="Retrato"
               width={150}
               height={100}
-              className={`rounded-3xl ${opacity} shadow-2xl flex justify-center xl:shadow-none xl:rounded-2xl xl:justify-end duration-1000 transition-all `}
+              className={`rounded-full ${opacity} shadow-2xl flex justify-center xl:shadow-none xl:rounded-2xl xl:justify-end duration-1000 transition-all `}
               sizes="50vw"
               style={{
                 width: "100%",

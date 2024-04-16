@@ -28,7 +28,7 @@ const Skills_bar = () => {
     {
       name: "Tailwind",
       icon: "/tailwind_icon.png",
-      class: `h-20 min-w-20 py-6 p-2 rounded-xl grayscale duration-1000 transition-all animate-photo`,
+      class: `h-20 min-w-20 py-5 p-2 rounded-xl grayscale duration-1000 transition-all animate-photo`,
     },
     {
       name: "TypeScript",

@@ -9,10 +9,10 @@ import { useMode } from "./index components/SwitchMode/modeSwitcher/modeSwitcher
 const Main_title = () => {
   const { mode } = useMode();
   const { textMain, textSecondary, textSecondary2 } = Colors[mode].text;
-  const { bg, main, borderX } = Colors[mode].color;
+  const { bg, main, borderY, borderX } = Colors[mode].color;
 
   const { language } = useLanguage();
-  const { span1, span2 } = LanguageTexts[language].main;
+  const { span1, span2, span3 } = LanguageTexts[language].main;
 
   const colorPalette = {
     textPrimary: "text-black", // Color de texto principal (negro)
@@ -25,13 +25,13 @@ const Main_title = () => {
   return (
     <div
       id="home"
-      className={`flex justify-center flex-col mt-28 lg:mt-16 xl:mt-20`}
+      className={`flex justify-center flex-col mt-28 lg:mt-16 xl:mt-20 py-8 `}
     >
       <div className="inline-block">
         <h4
           className={`flex justify-center text-xl sm:text-2xl lg:text-3xl  mb-5 font-semibold  ${textMain}`}
         >
-          <div>
+          <div className={``}>
             <span>👋</span>
 
             <span className={`${textMain}`}>{span1}</span>
@@ -68,9 +68,9 @@ const Main_title = () => {
         </button>
 
         <button
-          className={`${textSecondary} ${borderX} text-xs sm:text-lg xl:text-2xl font-bold px-4 py-2 border-2 mr-5 xl:ml-20`}
+          className={`${textSecondary} ${borderX} text-xs sm:text-lg xl:text-2xl font-bold px-4 py-2  mr-5 xl:ml-20 opacity-30`}
         >
-          Argentina
+         {span3}
         </button>
 
       </div>

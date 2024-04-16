@@ -17,7 +17,7 @@ const Navbar = () => {
 
   const { mode } = useMode();
   const { textMain, textSecondary, twisted } = Colors[mode].text;
-  const { bg, main, overlap, border } = Colors[mode].color;
+  const { bg, main, overlap, borderL, bgSecondary, overlap3 } = Colors[mode].color;
 
   let changeColor = textSecondary;
 
@@ -29,7 +29,7 @@ const Navbar = () => {
   ];
 
   return (
-    <Disclosure as="nav" className={`${bg} ${overlap} shadow-lg`}>
+    <Disclosure as="nav" className={`${bg} ${overlap3} shadow-lg`}>
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -86,12 +86,12 @@ const Navbar = () => {
           </div>
 
           <Disclosure.Panel className={`sm:hidden absolute  w-full`}>
-            <div className="px-2 pt-2 pb-3">
+            <div className="pb-3">
               {navigation.map((item) => (
                 <a
                   key={item.name}
                   href={item.href}
-                  className={`block px-3 py-2 rounded-md text-base font-medium border-l-red-400 border-l-2 ${textSecondary} `}
+                  className={`block px-3 py-2 m-1 rounded-md text-base font-medium ${borderL} border-2 ${bgSecondary} ${textSecondary} `}
                 >
                   {item.name}
                 </a>

@@ -20,7 +20,7 @@ const Contact = () => {
       <div id={`"contact" className="w-full p-4 ${bg} mt-24"`}>
         <div className="flex flex-row justify-center">
           <h1
-            className={`text-6xl ${textSecondary} font-semibold flex justify-center pt-2 w-full my-6 border-y-2 ${borderSecondary} md:text-7xl lg:text-9xl`}
+            className={`text-6xl ${textSecondary} pb-4 font-semibold flex justify-center pt-2 w-full my-6 border-y-2 ${borderSecondary} md:text-7xl lg:text-9xl`}
           >
             {title}
           </h1>
@@ -38,7 +38,7 @@ const Contact = () => {
 
             <div className="flex justify-center flex-col mx-10 xl:flex-row  ">
             <div
-                className={`w-full mx-auto px-10 pt-2 pb-10 mb-10 ${overlap} border-2 ${borderSecondary} rounded-2xl  xl:mx-5 xl:w-full xl:p-5 xl:px-10`}
+                className={`w-full mx-auto px-10 pt-2 pb-10 mb-10 ${overlap} border-2 ${borderSecondary} rounded-md  xl:mx-5 xl:w-full xl:p-5 xl:px-10`}
               >
                 <div className="w-12 h-12 p-2  mx-auto my-5  bg-transparent relative ">
                   <Image
@@ -65,7 +65,7 @@ const Contact = () => {
               </div>
            
               <div
-                className={`w-full mx-auto px-10 pt-2 pb-10 mb-10 ${overlap} border-2 ${borderSecondary} rounded-2xl  xl:mx-5 xl:w-full xl:p-5 xl:px-10`}
+                className={`w-full mx-auto px-10 pt-2 pb-10 mb-10 ${overlap} border-2 ${borderSecondary} rounded-md  xl:mx-5 xl:w-full xl:p-5 xl:px-10`}
               >
                 <div className="w-14 h-12 mx-auto  my-5  bg-transparent relative ">
                   <Image
@@ -87,7 +87,7 @@ const Contact = () => {
                   className={`flex justify-center font-bold text-l px-2 ${textMain}`}
                 >
                   <a
-                    href="mailto:cordobabencontact@gmail.com?subject=Asunto del correo&body=Cuerpo del correo"
+                    href="mailto:cordobabencontact@gmail.com?Subject=Aquí%20el%20asunto%20del%20mail"
                     target="_blank"
                   >
                     {" "}
@@ -98,7 +98,7 @@ const Contact = () => {
               </div>
 
               <div
-                className={`w-full mx-auto px-10 pt-2 pb-10 mb-10 ${overlap} border-2 ${borderSecondary} rounded-2xl  xl:mx-5 xl:w-full xl:p-5 xl:px-10`}
+                className={`w-full mx-auto px-10 pt-2 pb-10 mb-10 ${overlap} border-2 ${borderSecondary} rounded-md  xl:mx-5 xl:w-full xl:p-5 xl:px-10`}
               >
                 <div className="w-12 h-12 p-2  mx-auto my-5  bg-transparent relative ">
                   <Image
@@ -118,7 +118,7 @@ const Contact = () => {
                 <h1
                   className={`flex justify-center font-bold text-l px-2 ${textMain}`}
                 >
-                  +54 11 3256-5554{" "}
+                  <a href="https://wa.me//541132565554/?text=Hola, Le hablo para contactarlo."> +54 11 3256-5554 </a> 
                 </h1>
               </div>
 

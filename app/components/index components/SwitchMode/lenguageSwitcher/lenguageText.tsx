@@ -9,7 +9,8 @@ const LanguageTexts:any = {
     },
     main: {
       span1: ', mi nombre es ',
-      span2: ' y soy un ...'
+      span2: ' y soy un ...',
+      span3: 'Desliza abajo para ver mas contenido',
     },
     about: {
       h2: 'Estas son mis principales Conocimientos. ',
@@ -88,7 +89,7 @@ const LanguageTexts:any = {
     },
     contact: {
       title: 'Contacto',
-      span1: '¿Necesitas ponerte en contacto conmigo? Por favor, consulta mi información de contacto en la tarjeta a continuación.',
+      span1: '¿Necesitas ponerte en contacto conmigo? Por favor, consulta mi información de contacto en las tarjetas a continuación.',
       span2: 'Contacto por Email',
       span3: 'Teléfono o Whatsapp',
       span4: 'Perfil de GitHub'
@@ -109,7 +110,8 @@ const LanguageTexts:any = {
     },
     main: {
       span1: ', my name is ',
-      span2: ' and I am a ...'
+      span2: ' and I am a ...',
+      span3: 'Scroll down to see more content',
     },
     about: {
       h2: 'Hello World!',
