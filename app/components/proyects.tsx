@@ -74,19 +74,21 @@ const Proyects = () => {
         <div>
           <div className={`flex flex-col mx-auto mt-14  ${overlap} p-4 rounded-xl sm:w-11/12 md:w-9/12 lg:w-8/12 2xl:w-7/12`}>
             <h2 className={`flex justify-center font-bold text-xl lg:text-2xl 2xl:text-4xl ${textSecondary} border-2 ${borderY} animate__animated animate__fadeIn`}>
-              {h2}
+              Try
             </h2>
             <div className={`w-full h-72 xl:h-96  ${overlap2} rounded-2xl overflow-hidden my-5 relative ${textMain}`}>
-              <Image
-                src="/sign_up.png"
-                className="inset-0 w-full h-full object-cover grayscale-image transition-transform duration-300 transform scale-100 hover:scale-125"
-                alt="Image"
-                fill
-                sizes="100vw"
-                style={{
-                  objectFit: "cover",
-                }}
-              />
+              <a href="https://github.com/CordobaBenjamin/Cordoba-LogginProyect" target="_blank"> 
+                <Image
+                  src="/sign_up.png"
+                  className="inset-0 w-full h-full object-cover grayscale-image transition-transform duration-300 transform scale-100 hover:scale-125"
+                  alt="Image"
+                  fill
+                  sizes="100vw"
+                  style={{
+                    objectFit: "cover",
+                  }}
+                />
+              </a>
             </div>
             <div className={`lg:text-xl 2xl:text-2xl ${textMain}`}>
               <span>{span1}</span>
@@ -105,16 +107,18 @@ const Proyects = () => {
               {ah2}
             </h2>
             <div className={`w-full h-72 xl:h-96  ${overlap2} rounded-2xl overflow-hidden my-5 relative ${textMain}`}>
-              <Image
-                src="/market_gaming.png"
-                className="inset-0 w-full h-full object-cover  grayscale-image transition-transform duration-300 transform scale-100 hover:scale-125"
-                alt="Image"
-                fill
-                sizes="100vw"
-                style={{
-                  objectFit: "cover",
-                }}
-              />
+              <a href="https://github.com/CordobaBenjamin/MarketGaming-eCommerceProyect" target="_blank"> 
+                <Image
+                  src="/market_gaming.png"
+                  className="inset-0 w-full h-full object-cover  grayscale-image transition-transform duration-300 transform scale-100 hover:scale-125"
+                  alt="Image"
+                  fill
+                  sizes="100vw"
+                  style={{
+                    objectFit: "cover",
+                  }}
+                />
+              </a>
             </div>
             <div className={`lg:text-xl 2xl:text-2xl ${textMain}`}>
               <span>{aspan1}</span>
@@ -137,16 +141,18 @@ const Proyects = () => {
               {bh2}
             </h2>
             <div className={`w-full h-72 xl:h-96  ${overlap2} rounded-2xl overflow-hidden my-5 relative ${textMain}`}>
-              <Image
-                src="/hangman.png"
-                className="inset-0 w-full h-full object-cover  grayscale-image transition-transform duration-300 transform scale-100 hover:scale-125"
-                alt="Image"
-                fill
-                sizes="100vw"
-                style={{
-                  objectFit: "cover",
-                }}
-              />
+              <a href="https://github.com/CordobaBenjamin/TsProyect-HangMan-Game" target="_blank">
+                <Image
+                  src="/hangman.png"
+                  className="inset-0 w-full h-full object-cover  grayscale-image transition-transform duration-300 transform scale-100 hover:scale-125"
+                  alt="Image"
+                  fill
+                  sizes="100vw"
+                  style={{
+                    objectFit: "cover",
+                  }}
+                />
+              </a>
             </div>
             <div className={`lg:text-xl 2xl:text-2xl ${textMain}`}>
               <span className="font-bold"> {bspan1}</span>

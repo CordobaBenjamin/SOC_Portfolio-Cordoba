@@ -64,7 +64,7 @@ const Main_title = () => {
         <button
           className={`${textSecondary} ${borderX} text-xs sm:text-lg xl:text-2xl font-bold px-4 py-2 border-2 ml-5 xl:ml-20 boton-brillante`}
         >
-          Curriculum Vitae
+          <a href="/Benjamin Cordoba CV .pdf" target="_blank"> Curriculum Vitae </a>
         </button>
 
         <button
