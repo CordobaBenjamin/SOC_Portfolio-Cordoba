@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import 'animate.css'
 
 import LanguageTexts from "./index components/SwitchMode/lenguageSwitcher/lenguageText";
 import { useLanguage } from "./index components/SwitchMode/lenguageSwitcher/lenguageSwitcher";
