@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import 'animate.css'
 
 import LanguageTexts from "./index components/SwitchMode/lenguageSwitcher/lenguageText";
@@ -83,11 +83,8 @@ const Proyects = () => {
                   src="/sign_up.png"
                   className="inset-0 w-full h-full object-cover grayscale-image transition-transform duration-300 transform scale-100 hover:scale-125"
                   alt="Image"
-                  fill
+                  layout="fill"
                   sizes="100vw"
-                  style={{
-                    objectFit: "cover",
-                  }}
                 />
               </a>
             </div>
@@ -113,11 +110,8 @@ const Proyects = () => {
                   src="/market_gaming.png"
                   className="inset-0 w-full h-full object-cover  grayscale-image transition-transform duration-300 transform scale-100 hover:scale-125"
                   alt="Image"
-                  fill
+                  layout="fill"
                   sizes="100vw"
-                  style={{
-                    objectFit: "cover",
-                  }}
                 />
               </a>
             </div>
@@ -147,11 +141,8 @@ const Proyects = () => {
                   src="/hangman.png"
                   className="inset-0 w-full h-full object-cover  grayscale-image transition-transform duration-300 transform scale-100 hover:scale-125"
                   alt="Image"
-                  fill
+                  layout="fill"
                   sizes="100vw"
-                  style={{
-                    objectFit: "cover",
-                  }}
                 />
               </a>
             </div>

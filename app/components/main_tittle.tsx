@@ -68,7 +68,7 @@ const Main_title = () => {
         </button>
 
         <button
-          className={`${textSecondary} ${borderX} text-xs sm:text-lg xl:text-2xl font-bold px-4 py-2  mr-5 xl:ml-20 opacity-30`}
+          className={`${textSecondary} ${borderX} text-xs sm:text-lg xl:text-2xl font-bold px-4 py-2 xl:ml-20 opacity-30`}
         >
          {span3}
         </button>

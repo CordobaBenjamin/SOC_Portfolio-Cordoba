@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import LanguageTexts from "./SwitchMode/lenguageSwitcher/lenguageText";
 import { useLanguage } from "./SwitchMode/lenguageSwitcher/lenguageSwitcher";
 
@@ -34,11 +34,9 @@ const Learning_card = () => {
         <Image
           src={study}
           alt="Front end Icon"
-          fill
-          sizes="100vw"
-          style={{
-            objectFit: "cover",
-          }}
+          layout="fill"
+          objectFit="cover"
+          sizes="(min-width: 640px) 24vw, 100vw"
         />
       </div>
 

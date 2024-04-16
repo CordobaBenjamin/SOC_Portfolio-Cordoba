@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import LanguageTexts from "./SwitchMode/lenguageSwitcher/lenguageText";
 import { useLanguage } from "./SwitchMode/lenguageSwitcher/lenguageSwitcher";
 
@@ -23,11 +23,8 @@ const WhyMe_card = () => {
         <Image
           src={me}
           alt="Front end Icon"
-          fill
+          layout="fill"
           sizes="100vw"
-          style={{
-            objectFit: "cover",
-          }}
         />
       </div>
 

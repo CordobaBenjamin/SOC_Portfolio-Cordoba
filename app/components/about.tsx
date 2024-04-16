@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "next/legacy/image";
 import LanguageTexts from './index components/SwitchMode/lenguageSwitcher/lenguageText';
 import { useLanguage } from './index components/SwitchMode/lenguageSwitcher/lenguageSwitcher';
 import Colors from './index components/SwitchMode/modeSwitcher/modeColors';
@@ -8,10 +8,10 @@ const About = () => {
   
   const {mode} = useMode()
   const {textMain, textSecondary} = Colors[mode].text;
-  const {bg, main, border, opacity} = Colors[mode].color;
+  const {bg, main, border, opacity, overlap} = Colors[mode].color;
 
   const { language,  } = useLanguage();
-  const { tittle, span1, span2, span3, span4, } =
+  const { title, span1, span2, span3, span4, } =
     LanguageTexts[language].about;
 
   return (
@@ -19,7 +19,7 @@ const About = () => {
       <div className={`w-full p-4 ${bg} mt-24`} id="about">
         <div className="flex flex-row justify-center">
           <h1 className={`text-6xl font-semibold flex justify-center pb-4 w-full my-6 border-y-2 ${border} ${textMain} md:text-7xl lg:text-9xl`}>
-            {tittle}
+            {title}
           </h1>
         </div>
 
@@ -46,16 +46,15 @@ const About = () => {
 
           <div className="mx-auto w-4/6 sm:w-3/6 lg:w-1/3">
             <Image
-              src="/try4.png"
+              src="/me.png"
               alt="Retrato"
-              width={150}
-              height={100}
-              className={`rounded-full ${opacity} shadow-2xl flex justify-center xl:shadow-none xl:rounded-2xl xl:justify-end duration-1000 transition-all `}
+              width={100}
+              height={95}
+              className={`rounded-full ${opacity} flex justify-center xl:shadow-none xl:rounded-2xl xl:justify-end duration-1000 transition-all grayscale duration-1000 transition-all animate-photo `}
               sizes="50vw"
               style={{
                 width: "100%",
                 height: "auto",
-                objectFit: "cover",
               }}
             />
           </div>

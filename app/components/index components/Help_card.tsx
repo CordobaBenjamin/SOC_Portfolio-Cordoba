@@ -1,5 +1,5 @@
 import React from 'react'
-import Image from 'next/image';
+import Image from "next/legacy/image";
 import LanguageTexts from "./SwitchMode/lenguageSwitcher/lenguageText";
 import { useLanguage } from "./SwitchMode/lenguageSwitcher/lenguageSwitcher";
 
@@ -24,16 +24,14 @@ const Help_card = () => {
                 <Image
                   src={front}
                   alt="Front end Icon"
-                  fill
-                  sizes="100vw"
-                  style={{
-                    objectFit: "cover",
-                  }}
+                  layout="fill"
+                  objectFit="cover"
+                  sizes="(min-width: 640px) 24vw, 100vw"
                   className='p2'
                 />
               </div>
 
-              <h2 className={`flex justify-center text-xl mb-5 font-medium  md:text-2xl  lg:text-3xl ${textMain}`}>
+              <h2 className={`flex justify-center text-xl mb-5 font-medium   md:text-2xl  lg:text-3xl ${textMain}`}>
                 {title}
               </h2>
 

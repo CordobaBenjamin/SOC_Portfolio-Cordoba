@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import LanguageTexts from "./SwitchMode/lenguageSwitcher/lenguageText";
 import { useLanguage } from "./SwitchMode/lenguageSwitcher/lenguageSwitcher";
 
@@ -52,94 +52,7 @@ const Skills_bar = () => {
             {h2Secondary}
           </h2>
         </div>
-{/* 
-        <div className="grid grid-cols-5 mx-5">
-          <div
-            className={`col-start-1  ${borderSecondary} ${bg} py-5 px-8 mx-5`}
-          >
-            <div
-              className={`rounded-xl ${borderSecondary} ${overlap} pb-6 flex flex-col p-2`}
-            >
-              <a
-                href="https://nextjs.org/"
-                target="_blank"
-                className={`font-bold ${textSecondary}`}
-              >
-                {" "}
-                Next.js{" "}
-              </a>
-              <span className={`${textMain}`}>
-                {" "}
-                For performance, efficiency and developer experience. Next.js is
-                trusted by some of the biggest names on the web.{" "}
-              </span>
-            </div>
-          </div>
 
-          <div
-            className={`col-start-2 border-2 ${borderSecondary} py-5 pl-14 mx-5`}
-          >
-            <div className={` border-2 ${borderSecondary} pb-6 flex flex-col`}>
-              <a
-                href="https://nextjs.org/"
-                target="_blank"
-                className={`font-bold`}
-              >
-                {" "}
-                Next.js{" "}
-              </a>
-              <span className={``}> Framework for React </span>
-            </div>
-          </div>
-
-          <div
-            className={`col-start-3 border-2 ${borderSecondary} py-5 pl-14 mx-5`}
-          >
-            <div className={` border-2 ${borderSecondary} pb-6 flex flex-col`}>
-              <a
-                href="https://nextjs.org/"
-                target="_blank"
-                className={`font-bold`}
-              >
-                {" "}
-                Next.js{" "}
-              </a>
-              <span className={``}> Framework for React </span>
-            </div>
-          </div>
-
-          <div
-            className={`col-start-4 border-2 ${borderSecondary} py-5 pl-14 mx-5`}
-          >
-            <div className={` border-2 ${borderSecondary} pb-6 flex flex-col`}>
-              <a
-                href="https://nextjs.org/"
-                target="_blank"
-                className={`font-bold`}
-              >
-                {" "}
-                Next.js{" "}
-              </a>
-              <span className={``}> Framework for React </span>
-            </div>
-          </div>
-
-          <div
-            className={`col-start-5 border-2 ${borderSecondary} py-5 pl-14 mx-5`}
-          >
-            <div className={` border-2 ${borderSecondary} pb-6 flex flex-col`}>
-              <a
-                href="https://nextjs.org/"
-                target="_blank"
-                className={`font-bold`}
-              >
-                {" "}
-                Next.js{" "}
-              </a>
-              <span className={``}> Framework for React </span>
-            </div>
-          </div>
-        </div> */}
 
         <div className="animate-slide whitespace-nowrap flex items-center  mb-5 h-1/4 xl:w-2/3">
           {languages.map((lang, index) => (
@@ -149,11 +62,8 @@ const Skills_bar = () => {
                   src={lang.icon}
                   alt={lang.name}
                   className={lang.class}
-                  fill
+                  layout="fill"
                   sizes="100vw"
-                  style={{
-                    objectFit: "cover",
-                  }}
                 />
               </div>
               <div className="">
