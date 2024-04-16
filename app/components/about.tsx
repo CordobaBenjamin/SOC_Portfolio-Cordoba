@@ -50,7 +50,7 @@ const About = () => {
               alt="Retrato"
               width={100}
               height={95}
-              className={`rounded-full ${opacity} flex justify-center xl:shadow-none xl:rounded-2xl xl:justify-end duration-1000 transition-all grayscale duration-1000 transition-all animate-photo `}
+              className={`rounded-full ${opacity} flex justify-center xl:shadow-none xl:rounded-2xl xl:justify-end grayscale duration-1000 transition-all animate-photo `}
               sizes="50vw"
               style={{
                 width: "100%",
