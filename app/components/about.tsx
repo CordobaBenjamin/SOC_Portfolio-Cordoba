@@ -7,8 +7,8 @@ import { useMode } from './index components/SwitchMode/modeSwitcher/modeSwitcher
 const About = () => {
   
   const {mode} = useMode()
-  const {textMain, textSecondary} = Colors[mode].text;
-  const {bg, main, border, opacity, overlap} = Colors[mode].color;
+  const {textMain, textSecondary, mePic} = Colors[mode].text;
+  const {bg, main, borderSecondary, opacity, overlap, border} = Colors[mode].color;
 
   const { language,  } = useLanguage();
   const { title, span1, span2, span3, span4, } =
@@ -44,13 +44,13 @@ const About = () => {
             </div>
           </div>
 
-          <div className="mx-auto w-4/6 sm:w-3/6 lg:w-1/3">
+          <div className={`mx-auto w-4/6 sm:w-3/6 lg:w-1/3 border-2 rounded-full xl:border-0 xl:rounded-2xl ${borderSecondary}`}>
             <Image
-              src="/me.png"
+              src={mePic}
               alt="Retrato"
-              width={100}
+              width={95}
               height={95}
-              className={`rounded-full ${opacity} flex justify-center xl:shadow-none xl:rounded-2xl xl:justify-end grayscale duration-1000 transition-all animate-photo `}
+              className={`rounded-full ${opacity}  flex justify-center xl:shadow-none xl:rounded-2xl xl:justify-end grayscale duration-1000 transition-all `}
               sizes="50vw"
               style={{
                 width: "100%",
