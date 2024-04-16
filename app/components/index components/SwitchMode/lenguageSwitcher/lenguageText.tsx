@@ -10,18 +10,18 @@ const LanguageTexts:any = {
     main: {
       span1: ', mi nombre es ',
       span2: ' y soy un ...',
-      span3: 'Desliza abajo para ver mas contenido',
+      span3: 'Desliza abajo para ver más contenido',
     },
     about: {
-      h2: 'Estas son mis principales Conocimientos. ',
-      tittle: 'Acerca de mi', 
-      span1: 'Hola, mi nombre es Benjamín Córdoba, tengo 19 años. He estado estudiando desarrollo web durante 2 años. Y en el último año comencé a ser estudiante de ingeniería en informática.',
+      h2: 'Estos son mis principales conocimientos.',
+      title: 'Acerca de mi', 
+      span1: 'Hola, mi nombre es Benjamin Cordoba, tengo 19 años. He estado estudiando desarrollo web durante 2 años. Y en el último año comencé a ser estudiante de ingeniería en informática.',
       span2: ' (Por ahora casi todo es lógica y matemáticas)',
       span3: 'He participado en conferencias/cursos/charlas y en general aprendiendo de diferentes profesionales aquí en Argentina.',
       span4: '(Detallaré esto más adelante.)',
     },
     learning_card: {
-      title: '¿Dónde Aprendi?',
+      title: '¿Dónde Aprendí?',
       span1: 'La mayor parte de mis conocimientos provienen de',
       span2: ' Cursos',
       span3: ' (CoderHouse, Devtalles o Codo a Codo),',
@@ -37,7 +37,7 @@ const LanguageTexts:any = {
       title: '¿Cómo Puedo Ayudarte?',
       span1: 'Para mí, es importante conocer todos los aspectos del proceso de desarrollo web, ',
       span2: 'aprenderé cualquier tecnología necesaria que me ayude a cumplir mis objetivos. ',
-      span3: ' Por ahora me estoy especializando unicamente en Front End.'
+      span3: ' Por ahora me estoy especializando únicamente en Front End.'
     },
     why_me_card: {
       title: '¿Por qué Elegirme?',
@@ -45,14 +45,14 @@ const LanguageTexts:any = {
       span2: 'Principales Cualidades',
       span3: 'es ser resolutivo.',
       span4: ' Una de las cosas que más me llama la atención en mi carrera universitaria es ',
-      span5: 'como te preparan para resolver problemas usando la lógica.',
-      span6: ' Es por esto que se que, ',
-      span7: 'podré resolver cualquier desafio que tenga por delante.'
+      span5: 'cómo te preparan para resolver problemas usando la lógica.',
+      span6: ' Es por esto que sé que, ',
+      span7: 'podré resolver cualquier desafío que tenga por delante.'
     },
     login_project: {
       title1: 'Proyectos',
       title2: 'Principales',
-      h2: 'Proyecto Inicio de Sesion',
+      h2: 'Proyecto Inicio de Sesión',
       span1: 'Proyecto sobre una página de inicio de sesión, Desarrollada con',
       span2: 'Next.js y React Hook Form, ',
       span3: 'estilizada usando',
@@ -63,29 +63,28 @@ const LanguageTexts:any = {
       span8: 'CryptoJS.'
     },
     ecommerce_project: {
-      ah2: 'Proyecto de Comercio electronico',
-      aspan1: 'Aplicación de comercio electrónico',
-      aspan2: ' Transpilada a TSX',
-      aspan3: 'desde un antiguo proyecto basado en JavaScript',
-      aspan4: 'para un código más Estable',
-      aspan5: 'y',
-      aspan6: 'Limpio',
-      aspan7: 'El proyecto fue creado en ',
-      aspan8: 'Next.js',
-      aspan9: 'y está estilizado con ',
-      aspan10: 'CSS Puro',
+      h2: 'Proyecto de Comercio Electrónico',
+      span1: 'Aplicación de comercio electrónico',
+      span2: ' Transpilada a TSX',
+      span3: 'desde un antiguo proyecto basado en JavaScript',
+      span4: 'para un código más estable',
+      span5: 'y',
+      span6: 'limpio',
+      span7: 'El proyecto fue creado en ',
+      span8: 'Next.js',
+      span9: 'y está estilizado con ',
+      span10: 'CSS Puro',
     },
     game_project: {
-      bh2: 'Proyecto de Juego',
-      bspan1: 'Proyecto de Ahorcado en TypeScript',
-      bspan10: ', creado con',
-      bspan2: 'CSS Puro',
-      bspan3: ' y',
-      bspan4: 'Webpack',
-      bspan5: ', aunque el proyecto no es extenso, fue un desafío trabajar en',
-      bspan6: 'la lógica de las funciones',
-      bspan7: 'en un juego que depende de tantos tipos de datos, en un lenguaje fuertemente tipado como es  ',
-      bspan9: 'TypeScript.',
+      h2: 'Proyecto de Juego',
+      span1: 'Proyecto de Ahorcado en TypeScript',
+      span2: ' CSS Puro',
+      span3: ' y',
+      span4: 'Webpack',
+      span5: ', aunque el proyecto no es extenso, fue un desafío trabajar en',
+      span6: 'la lógica de las funciones',
+      span7: 'en un juego que depende de tantos tipos de datos, en un lenguaje fuertemente tipado como es  ',
+      span8: 'TypeScript.',
     },
     contact: {
       title: 'Contacto',
@@ -117,7 +116,7 @@ const LanguageTexts:any = {
       h2: 'Hello World!',
       h2Secondary: 'Here are my main skills.',
       tittle: 'About Me', 
-      span1: 'Hello, my name is Benjamín Córdoba, I am 19 years old. I have been studying web development for 2 years. In the past year, I started studying computer engineering.',
+      span1: 'Hello, my name is Benjamín Córdoba, I am 19 years old. I have been studying web development for 2 years. In the last year, I started studying computer engineering.',
       span2: ' (So far, it’s mostly logic and mathematics)',
       span3: 'I have attended conferences/courses/talks and generally learned from different professionals here in Argentina.',
       span4: ' (I will detail this later.)',
@@ -132,14 +131,14 @@ const LanguageTexts:any = {
       span6: 'like online courses, Stack Overflow, MDN, ',
       span7: 'Practice with Peers, ',
       span8: 'Projects',
-      span9: 'and above all',
+      span9: ' and above all',
       span10: ' Time, a lot of time',
     },
     help_card: {
       title: 'How Can I Help You?',
       span1: 'For me, it is important to understand all aspects of the web development process, I’ll learn any necessary technology to achieve my goals.',
-      span2: 'I’ll learn any necessary technology to achieve my goals.',
-      span3: ' Currently, I am specializing solely in Front End.'
+      span2: ' I’ll learn any necessary technology to achieve my goals.',
+      span3: ' Currently, I am specializing in Front End.  '
     },
     why_me_card: {
       title: 'Why Choose Me?',
@@ -191,7 +190,7 @@ const LanguageTexts:any = {
     },
     contact: {
       title: 'Contact',
-      span1: 'Need to get in touch with me? Please see my contact information on the card below.',
+      span1: 'Need to get in touch with me? Please check my contact information on the card below. ',
       span2: 'Contact by Email',
       span3: 'Phone or Whatsapp',
       span4: 'GitHub Profile'
@@ -201,7 +200,7 @@ const LanguageTexts:any = {
       title2: ' created by',
       title3: 'Benjamin Cordoba',
       span1: 'Hosting by Vercel and Created with Next.js',
-      span2: 'For the repository of the proyect click here'
+      span2: 'For the repository of the proyect Click Here'
     },
   }
 };

@@ -105,8 +105,8 @@
   }
 }
 
-.boton-brillante {
-  animation: brillo-opacidad 2s infinite;
+.button-glow {
+  animation: brillo-opacidad 2.5s infinite;
 }
 
 .animate-photo {

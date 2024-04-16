@@ -29,7 +29,7 @@ const Footer = () => {
         </div>
 
         <div className={`flex justify-center `}>
-            <a href="https://github.com/CordobaBenjamin/BenjaminCordoba-Portfolio" target="_blank"> <span className={`${textMain} text-sm font-semibold xl:text-lg`}> {span2} </span></a>
+            <a href="https://github.com/CordobaBenjamin/BenjaminCordoba-Portfolio" target="_blank"> <span className={`${textMain} text-sm font-semibold xl:text-lg button-glow`}> {span2} </span></a>
         </div>
 
       </div>

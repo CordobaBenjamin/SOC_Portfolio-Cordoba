@@ -39,8 +39,10 @@ const Contact = () => {
             <div className="flex justify-center flex-col mx-10 xl:flex-row  ">
             <div
                 className={`w-full mx-auto px-10 pt-2 pb-10 mb-10 ${overlap} border-2 ${borderSecondary} rounded-md  xl:mx-5 xl:w-full xl:p-5 xl:px-10`}
-              >
-                <div className="w-12 h-12 p-2  mx-auto my-5  bg-transparent relative ">
+              > 
+                <a href="https://github.com/CordobaBenjamin?tab=repositories" target="_blank"> 
+                <div>
+                <div className="w-12 h-12 p-2  mx-auto my-5  bg-transparent relative button-glow ">
                   <Image
                     src={git}
                     alt="GitHub Icon"
@@ -50,24 +52,29 @@ const Contact = () => {
                 </div>
 
                 <h2
-                  className={`flex justify-center text-xl font-medium ${textSecondary}`}
+                  className={`flex justify-center text-xl font-medium ${textSecondary} button-glow`}
                 >
                   {span4}
                 </h2>
 
-                <a href="https://github.com/CordobaBenjamin?tab=repositories" target="_blank">
+             
                   <h1
-                    className={`flex justify-center font-bold text-l px-2 ${textMain}`}
+                    className={`flex justify-center font-bold text-l px-2 ${textMain} button-glow`}
                   >  
                     github.com/CordobaBenjamin
                   </h1>
+           
+                </div>
                 </a>
               </div>
            
               <div
                 className={`w-full mx-auto px-10 pt-2 pb-10 mb-10 ${overlap} border-2 ${borderSecondary} rounded-md  xl:mx-5 xl:w-full xl:p-5 xl:px-10`}
               >
-                <div className="w-14 h-12 mx-auto  my-5  bg-transparent relative ">
+                <a href="mailto:cordobabencontact@gmail.com?Subject=Aquí%20el%20asunto%20del%20mail"
+                    target="_blank" >
+                <div>
+                <div className="w-14 h-12 mx-auto  my-5  bg-transparent relative button-glow">
                   <Image
                     src={mail}
                     alt="Front end Icon"
@@ -86,42 +93,45 @@ const Contact = () => {
                 <h1
                   className={`flex justify-center font-bold text-l px-2 ${textMain}`}
                 >
-                  <a
-                    href="mailto:cordobabencontact@gmail.com?Subject=Aquí%20el%20asunto%20del%20mail"
-                    target="_blank"
-                  >
-                    {" "}
-                    cordobabencontact@gmail.com{" "}
-                  </a>
+                 
+          
+                    cordobabencontact@gmail.com
+           
                 </h1>
+                </div>
+                </a>
 
               </div>
-
+          
               <div
                 className={`w-full mx-auto px-10 pt-2 pb-10 mb-10 ${overlap} border-2 ${borderSecondary} rounded-md  xl:mx-5 xl:w-full xl:p-5 xl:px-10`}
-              >
-                <div className="w-12 h-12 p-2  mx-auto my-5  bg-transparent relative ">
-                  <Image
-                    src={telefono}
-                    alt="Front end Icon"
-                    layout="fill"
-                    className="bg-transparent"
-                  />
-                </div>
+              > 
+                <a href="https://wa.me/541132565554/?text=Hola!, le mando un mensaje para contactarme con usted." target="_blank"> 
+                    <div> 
+                      <div className="w-12 h-12 p-2  mx-auto my-5  bg-transparent relative button-glow ">
+                        <Image
+                          src={telefono}
+                          alt="Front end Icon"
+                          layout="fill"
+                          className="bg-transparent"
+                        />
+                      </div>
 
-                <h2
-                  className={`flex justify-center text-xl font-medium ${textSecondary}`}
-                >
-                  {span3}
-                </h2>
+                      <h2
+                        className={`flex justify-center text-xl font-medium ${textSecondary} button-glow`}
+                      >
+                        {span3}
+                      </h2>
 
-                <h1
-                  className={`flex justify-center font-bold text-l px-2 ${textMain}`}
-                >
-                  <a href="https://wa.me//541132565554/?text=Hola, Le hablo para contactarlo."> +54 11 3256-5554 </a> 
-                </h1>
+                      <h1
+                        className={`flex justify-center font-bold text-l px-2 ${textMain} button-glow`}
+                      >
+                        +54 11 3256-5554 
+                      </h1>
+                    </div>
+                </a>
+                
               </div>
-
             </div>
           </div>
         </div>
