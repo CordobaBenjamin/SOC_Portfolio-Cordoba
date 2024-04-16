@@ -74,9 +74,10 @@ const Proyects = () => {
 
         <div>
           <div className={`flex flex-col mx-auto mt-14  ${overlap} p-4 rounded-xl sm:w-11/12 md:w-9/12 lg:w-8/12 2xl:w-7/12`}>
-            <h2 className={`flex justify-center font-bold text-xl lg:text-2xl 2xl:text-4xl ${textSecondary} border-2 ${borderY} animate__animated animate__fadeIn`}>
+            <h2 className={`flex justify-center font-bold text-xl lg:text-2xl 2xl:text-4xl ${textSecondary} border-2 ${borderY} animate__animated animate__fadeIn w-fit h-fit`}>
               Try
             </h2>
+            <h2> Try2 </h2>
             <div className={`w-full h-72 xl:h-96  ${overlap2} rounded-2xl overflow-hidden my-5 relative ${textMain}`}>
               <a href="https://github.com/CordobaBenjamin/Cordoba-LogginProyect" target="_blank"> 
                 <Image
