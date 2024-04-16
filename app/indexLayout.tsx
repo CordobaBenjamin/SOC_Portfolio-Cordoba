@@ -62,7 +62,7 @@ function IndexLayout({ children }: { children: React.ReactNode }) {
 
   const { ref: cardsRef, inView: cardsInView } = useInView({
     triggerOnce: true,
-    threshold: 0.5,
+    threshold: 0.2,
   });
 
   const { ref: skillsRef, inView: skillsInView } = useInView({
