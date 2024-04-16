@@ -61,12 +61,12 @@ const Proyects = () => {
       <div id="proyect" className={`w-full p-4 ${bg} mt-16`}>
         <div className={`grid grid-cols-2 grid-rows-2 pb-4 mx-2 sm:mx-auto sm:w-10/12 md:w-8/12 lg:w-7/12 xl:w-6/12 2xl:w-7/12 border-4 h-1/2 ${borderYSecondary}`}>
           <div className={`col-start-1 col-end-2 row-start-1`}>
-            <h1 className={`text-8xl 2xl:text-10xl font-semibold flex pt-2 w-full ${textSecondary}`}>
+            <h1 className={`text-6xl sm:text-8xl 2xl:text-10xl font-semibold flex pt-2 w-full ${textSecondary}`}>
               {title1}
             </h1>
           </div>
           <div className={`col-start-2 col-end-3 row-start-2`}>
-            <h1 className={`text-8xl 2xl:text-10xl font-semibold flex justify-end pt-2 w-full ${textMain} `}>
+            <h1 className={`text-6xl sm:text-8xl 2xl:text-10xl font-semibold flex justify-end pt-2 w-full ${textMain} `}>
               {title2}
             </h1>
           </div>

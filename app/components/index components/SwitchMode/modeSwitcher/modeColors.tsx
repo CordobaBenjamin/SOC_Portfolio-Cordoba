@@ -54,7 +54,7 @@ const Colors: any = {
       bgSecondary: "bg-zinc-800 transition-background-color duration-200",
       main: "gray-300 transition-colors duration-200",
       border: "border-emerald-800 transition-border-color duration-200",
-      borderY: "border-x-zinc-800 border-y-emerald-900 transition-border-color duration-200",
+      borderY: "border-x-transparent border-y-emerald-900 transition-border-color duration-200",
       borderX: "border-x-transparent border-t-transparent border-b-emerald-900 transition-border-color duration-200",
       borderL: "border-r-transparent border-y-transparent border-l-emerald-900 transition-border-color duration-200",
       borderSecondary: "border-zinc-800 transition-border-color duration-200",

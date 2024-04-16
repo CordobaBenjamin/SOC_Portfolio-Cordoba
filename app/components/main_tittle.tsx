@@ -60,9 +60,9 @@ const Main_title = () => {
         </h1>
       </div>
 
-      <div className="flex justify-between  xl:mx-40 my-14">
+      <div className="flex justify-normal flex-col mx-2 sm:justify-between sm:flex-row xl:mx-40 my-14">
         <button
-          className={`${textSecondary} ${borderX} text-xs sm:text-lg xl:text-2xl font-bold px-4 py-2 border-2 ml-5 xl:ml-20 button-glow`}
+          className={`${textSecondary} ${borderX} text-xs sm:text-lg xl:text-2xl font-bold px-4 py-2 border-2  xl:ml-20 button-glow`}
         >
           <a href="/Benjamin Cordoba CV .pdf" target="_blank"> Curriculum Vitae </a>
         </button>
