@@ -1,19 +1,16 @@
 import React from "react";
 import Image from "next/legacy/image";
-import 'animate.css'
-
+import "animate.css";
 import LanguageTexts from "./index components/SwitchMode/lenguageSwitcher/lenguageText";
 import { useLanguage } from "./index components/SwitchMode/lenguageSwitcher/lenguageSwitcher";
-import Colors from './index components/SwitchMode/modeSwitcher/modeColors';
-import { useMode } from './index components/SwitchMode/modeSwitcher/modeSwitcher';
-
+import Colors from "./index components/SwitchMode/modeSwitcher/modeColors";
+import { useMode } from "./index components/SwitchMode/modeSwitcher/modeSwitcher";
 
 const Proyects = () => {
-  
-  const {mode} = useMode()
-  const {textMain, textSecondary} = Colors[mode].text;
-  const {bg, main, borderY, borderYSecondary, overlap, overlap2} = Colors[mode].color;
-
+  const { mode } = useMode();
+  const { textMain, textSecondary } = Colors[mode].text;
+  const { bg, borderY, borderYSecondary, overlap, overlap2 } =
+    Colors[mode].color;
 
   const { language } = useLanguage();
   const {
@@ -59,26 +56,41 @@ const Proyects = () => {
   return (
     <>
       <div id="proyect" className={`w-full p-4 ${bg} mt-16`}>
-        <div className={`grid grid-cols-2 grid-rows-2 pb-4 mx-2 sm:mx-auto sm:w-10/12 md:w-8/12 lg:w-7/12 xl:w-6/12 2xl:w-7/12 border-4 h-1/2 ${borderYSecondary}`}>
+        <div
+          className={`grid grid-cols-2 grid-rows-2 pb-4 mx-2 sm:mx-auto sm:w-10/12 md:w-8/12 lg:w-7/12 xl:w-6/12 2xl:w-7/12 border-4 h-1/2 ${borderYSecondary}`}
+        >
           <div className={`col-start-1 col-end-2 row-start-1`}>
-            <h1 className={`text-6xl sm:text-8xl 2xl:text-10xl font-semibold flex pt-2 w-full ${textSecondary}`}>
+            <h1
+              className={`text-6xl sm:text-8xl 2xl:text-10xl font-semibold flex pt-2 w-full ${textSecondary}`}
+            >
               {title1}
             </h1>
           </div>
           <div className={`col-start-2 col-end-3 row-start-2`}>
-            <h1 className={`text-6xl sm:text-8xl 2xl:text-10xl font-semibold flex justify-end pt-2 w-full ${textMain} `}>
+            <h1
+              className={`text-6xl sm:text-8xl 2xl:text-10xl font-semibold flex justify-end pt-2 w-full ${textMain} `}
+            >
               {title2}
             </h1>
           </div>
         </div>
 
         <div>
-          <div className={`flex flex-col mx-auto mt-14  ${overlap} p-4 rounded-md sm:w-11/12 md:w-9/12 lg:w-8/12 2xl:w-7/12`}>
-            <h2 className={`flex justify-center font-bold text-xl lg:text-2xl 2xl:text-4xl ${textSecondary} border-2 ${borderY}`}>
+          <div
+            className={`flex flex-col mx-auto mt-14  ${overlap} p-4 rounded-md sm:w-11/12 md:w-9/12 lg:w-8/12 2xl:w-7/12`}
+          >
+            <h2
+              className={`flex justify-center font-bold text-xl lg:text-2xl 2xl:text-4xl ${textSecondary} border-2 ${borderY}`}
+            >
               {h2}
             </h2>
-            <div className={`w-full h-72 xl:h-96  ${overlap2} rounded-xl overflow-hidden my-5 relative ${textMain}`}>
-              <a href="https://github.com/CordobaBenjamin/Cordoba-LogginProyect" target="_blank"> 
+            <div
+              className={`w-full h-72 xl:h-96  ${overlap2} rounded-xl overflow-hidden my-5 relative ${textMain}`}
+            >
+              <a
+                href="https://github.com/CordobaBenjamin/Cordoba-LogginProyect"
+                target="_blank"
+              >
                 <Image
                   src="/sign_up.png"
                   className="inset-0 w-full h-full object-cover grayscale-image transition-transform duration-300 transform scale-100 hover:scale-125"
@@ -100,12 +112,21 @@ const Proyects = () => {
             </div>
           </div>
 
-          <div className={`flex flex-col mx-auto mt-14  ${overlap} p-4 rounded-md sm:w-11/12 md:w-9/12 lg:w-8/12 2xl:w-7/12`}>
-          <h2 className={`flex justify-center font-bold text-xl lg:text-2xl 2xl:text-4xl ${textSecondary} border-2 ${borderY}`}>
+          <div
+            className={`flex flex-col mx-auto mt-14  ${overlap} p-4 rounded-md sm:w-11/12 md:w-9/12 lg:w-8/12 2xl:w-7/12`}
+          >
+            <h2
+              className={`flex justify-center font-bold text-xl lg:text-2xl 2xl:text-4xl ${textSecondary} border-2 ${borderY}`}
+            >
               {ah2}
             </h2>
-            <div className={`w-full h-72 xl:h-96  ${overlap2} rounded-xl overflow-hidden my-5 relative ${textMain}`}>
-              <a href="https://github.com/CordobaBenjamin/MarketGaming-eCommerceProyect" target="_blank"> 
+            <div
+              className={`w-full h-72 xl:h-96  ${overlap2} rounded-xl overflow-hidden my-5 relative ${textMain}`}
+            >
+              <a
+                href="https://github.com/CordobaBenjamin/MarketGaming-eCommerceProyect"
+                target="_blank"
+              >
                 <Image
                   src="/market_gaming.png"
                   className="inset-0 w-full h-full object-cover  grayscale-image transition-transform duration-300 transform scale-100 hover:scale-125"
@@ -126,17 +147,25 @@ const Proyects = () => {
               <span> {aspan8} </span>
               <span className="font-bold"> {aspan9}</span>
               <span> {aspan10}</span>
-              {/* <span className="font-bold"> {aspan11}</span> */}
             </div>
           </div>
 
-          <div className={`flex flex-col mx-auto mt-14  ${overlap} p-4 rounded-md sm:w-11/12 md:w-9/12 lg:w-8/12 2xl:w-7/12`}>
-          <h2 className={`flex justify-center font-bold text-xl lg:text-2xl 2xl:text-4xl ${textSecondary} border-2 ${borderY} `}>
+          <div
+            className={`flex flex-col mx-auto mt-14  ${overlap} p-4 rounded-md sm:w-11/12 md:w-9/12 lg:w-8/12 2xl:w-7/12`}
+          >
+            <h2
+              className={`flex justify-center font-bold text-xl lg:text-2xl 2xl:text-4xl ${textSecondary} border-2 ${borderY} `}
+            >
               {" "}
               {bh2}
             </h2>
-            <div className={`w-full h-72 xl:h-96  ${overlap2} rounded-xl overflow-hidden my-5 relative ${textMain}`}>
-              <a href="https://github.com/CordobaBenjamin/TsProyect-HangMan-Game" target="_blank">
+            <div
+              className={`w-full h-72 xl:h-96  ${overlap2} rounded-xl overflow-hidden my-5 relative ${textMain}`}
+            >
+              <a
+                href="https://github.com/CordobaBenjamin/TsProyect-HangMan-Game"
+                target="_blank"
+              >
                 <Image
                   src="/hangman.png"
                   className="inset-0 w-full h-full object-cover  grayscale-image transition-transform duration-300 transform scale-100 hover:scale-125"

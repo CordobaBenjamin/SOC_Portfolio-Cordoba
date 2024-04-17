@@ -7,9 +7,10 @@ import { ModeProvider } from "@/app/components/index components/SwitchMode/modeS
 
 const IndexPage: React.FC = () => {
   return (
-    <div>
+    <>
       <ModeProvider>
         <LanguageProvider>
+          
           <Head>
             <title> Benjamin Cordoba - Portfolio </title>
             <link rel="icon" href="/icon.png" />
@@ -19,7 +20,7 @@ const IndexPage: React.FC = () => {
           </IndexLayout>
         </LanguageProvider>
       </ModeProvider>
-    </div>
+    </>
   );
 };
 

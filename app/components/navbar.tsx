@@ -2,27 +2,22 @@ import React from "react";
 import "animate.css";
 import { Disclosure } from "@headlessui/react";
 import { Bars3Icon } from "@heroicons/react/16/solid";
-
 import LanguageTexts from "./index components/SwitchMode/lenguageSwitcher/lenguageText";
 import { useLanguage } from "./index components/SwitchMode/lenguageSwitcher/lenguageSwitcher";
 import { LanguageSwitcher } from "./index components/SwitchMode/lenguageSwitcher/lenguageSwitcher";
-
 import Colors from "./index components/SwitchMode/modeSwitcher/modeColors";
 import { useMode } from "./index components/SwitchMode/modeSwitcher/modeSwitcher";
 import { ModeSwitcher } from "./index components/SwitchMode/modeSwitcher/modeSwitcher";
 
 const Navbar = () => {
   const { language } = useLanguage();
-  const { a1, a2, a3, a4 } = LanguageTexts[language].navbar;
+  const { a1, a2, a3 } = LanguageTexts[language].navbar;
 
   const { mode } = useMode();
   const { textMain, textSecondary, twisted } = Colors[mode].text;
-  const { bg, main, overlap, borderL, bgSecondary, overlap3 } = Colors[mode].color;
-
-  let changeColor = textSecondary;
+  const { bg, borderL, bgSecondary, overlap3 } = Colors[mode].color;
 
   const navigation = [
-    // Marca la página actual como "current"
     { name: a1, href: "#about" },
     { name: a2, href: "#proyect" },
     { name: a3, href: "#contact" },
@@ -64,13 +59,13 @@ const Navbar = () => {
                 </div>
               </div>
               <div className="flex sm:hidden">
-              <div className={`${twisted} px-3 py-2 `}>
-                    <ModeSwitcher />
-                  </div>
+                <div className={`${twisted} px-3 py-2 `}>
+                  <ModeSwitcher />
+                </div>
 
-                  <div className={`${textSecondary} px-3 py-2 `}>
-                    <LanguageSwitcher />
-                  </div>
+                <div className={`${textSecondary} px-3 py-2 `}>
+                  <LanguageSwitcher />
+                </div>
                 <Disclosure.Button
                   className={`p-2 rounded-md ${textMain}  ml-5`}
                 >

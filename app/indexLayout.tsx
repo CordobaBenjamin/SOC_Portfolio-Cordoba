@@ -1,11 +1,9 @@
-import { ReactNode, useEffect } from "react";
+import { ReactNode } from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-
 import Colors from "./components/index components/SwitchMode/modeSwitcher/modeColors";
 import { useLanguage } from "./components/index components/SwitchMode/lenguageSwitcher/lenguageSwitcher";
 import { useMode } from "./components/index components/SwitchMode/modeSwitcher/modeSwitcher";
-
 import Navbar from "./components/navbar";
 import Main_tittle from "./components/main_tittle";
 import About from "./components/about";
@@ -16,7 +14,6 @@ import WhyMe_card from "./components/index components/whyMe_card";
 import Proyects from "./components/proyects";
 import Contact from "./components/contact";
 import Footer from "./components/footer";
-
 import "animate.css";
 import "./globals.css";
 
@@ -25,7 +22,7 @@ interface Metadata {
   description: string;
   authors: string;
   keywords: string[];
-  language?: string; // Idioma opcional
+  language?: string; 
 }
 
 export const metadata: Metadata = {
@@ -45,11 +42,10 @@ export const metadata: Metadata = {
   language: "en",
 };
 
-interface IndexLayoutProps {
-  children: ReactNode; // Declara que children es de tipo ReactNode
-}
+interface IndexLayoutProps { children: ReactNode; }
 
 function IndexLayout({ children }: { children: React.ReactNode }) {
+
   const { language, changeLanguage } = useLanguage();
   const { mode, changeMode } = useMode();
   const { textMain, textSecondary, twisted } = Colors[mode].text;
@@ -85,8 +81,6 @@ function IndexLayout({ children }: { children: React.ReactNode }) {
       <Navbar />
 
       <Main_tittle />
-
-      {/* Sección About */}
       <motion.div
         ref={aboutRef}
         initial={{ opacity: 0, y: 50 }}
@@ -96,7 +90,6 @@ function IndexLayout({ children }: { children: React.ReactNode }) {
         <About />
       </motion.div>
 
-      {/* Sección Cards */}
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         animate={cardsInView ? { opacity: 1, y: 0 } : {}}
@@ -109,7 +102,6 @@ function IndexLayout({ children }: { children: React.ReactNode }) {
         </div>
       </motion.div>
 
-      {/* Sección Skills Bar */}
       <motion.div
         ref={skillsRef}
         initial={{ opacity: 0, y: 50 }}
@@ -118,12 +110,9 @@ function IndexLayout({ children }: { children: React.ReactNode }) {
       >
         <Skills_bar />
       </motion.div>
-
-      {/* Sección Projects */}
-
+  
       <Proyects />
 
-      {/* Sección Contact */}
       <motion.div
         ref={contactRef}
         initial={{ opacity: 0, y: 50 }}
@@ -132,9 +121,11 @@ function IndexLayout({ children }: { children: React.ReactNode }) {
       >
         <Contact />
         <Footer />
+
       </motion.div>
 
       {children}
+      
     </div>
   );
 }
