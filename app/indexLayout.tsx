@@ -91,6 +91,16 @@ function IndexLayout({ children }: { children: React.ReactNode }) {
       </motion.div>
 
       <motion.div
+        ref={skillsRef}
+        initial={{ opacity: 0, y: 50 }}
+        animate={skillsInView ? { opacity: 1, y: 0 } : {}}
+        transition={{ duration: 0.3 }}
+      >
+        <Skills_bar />
+      </motion.div>
+  
+
+      <motion.div
         initial={{ opacity: 0, y: 50 }}
         animate={cardsInView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.4, delay: 0.1 }}
@@ -102,15 +112,6 @@ function IndexLayout({ children }: { children: React.ReactNode }) {
         </div>
       </motion.div>
 
-      <motion.div
-        ref={skillsRef}
-        initial={{ opacity: 0, y: 50 }}
-        animate={skillsInView ? { opacity: 1, y: 0 } : {}}
-        transition={{ duration: 0.3 }}
-      >
-        <Skills_bar />
-      </motion.div>
-  
       <Proyects />
 
       <motion.div

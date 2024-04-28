@@ -40,11 +40,6 @@ const Skills_bar = () => {
       class: `h-20 min-w-20 p-2 rounded-xl ${opacity} grayscale duration-1000 transition-all animate-photo`,
     },
     {
-      name: "Docker",
-      icon: "/docker_icon.png",
-      class: `h-20 min-w-20 p-2 rounded-xl ${opacity}  grayscale duration-1000 transition-all animate-photo`,
-    },
-    {
       name: "Jest",
       icon: "/jest_icon.png",
       class: `h-20 min-w-20 p-2 rounded-xl ${opacity}  grayscale duration-1000 transition-all animate-photo`,
@@ -57,7 +52,7 @@ const Skills_bar = () => {
   ];
 
   return (
-    <div className="my-20">
+    <div className="mb-20 sm:my-20">
       <div className="overflow-hidden relative w-full h-4/5 my-5 xl:w-50">
         <div className="flex flex-col justify-center mx-auto w-fit">
           <h2

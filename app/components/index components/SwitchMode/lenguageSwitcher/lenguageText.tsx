@@ -19,8 +19,8 @@ const LanguageTexts: any = {
         "Hola, mi nombre es Benjamin Cordoba, tengo 19 años. He estado estudiando desarrollo web durante 2 años. Y en el último año comencé a ser estudiante de ingeniería en informática.",
       span2: " (Por ahora casi todo es lógica y matemáticas)",
       span3:
-        "He participado en conferencias/cursos/charlas y en general aprendiendo de diferentes profesionales aquí en Argentina.",
-      span4: "(Detallaré esto más adelante.)",
+        "He aprendiendo de diferentes profesionales aquí en Argentina y seguido el camino para ser un front end developer.",
+      span4: "(Next.js | TypeScript | Node.js)",
     },
     learning_card: {
       title: "¿Dónde Aprendí?",
@@ -127,8 +127,8 @@ const LanguageTexts: any = {
         "Hello, my name is Benjamín Córdoba, I am 19 years old. I have been studying web development for 2 years. In the last year, I started studying computer engineering.",
       span2: " (So far, it’s mostly logic and mathematics)",
       span3:
-        "I have attended conferences/courses/talks and generally learned from different professionals here in Argentina.",
-      span4: " (I will detail this later.)",
+        "I learned from different professionals here in Argentina and following the front end roadmap.",
+      span4: " (Next.js | TypeScript | Node.js)",
     },
     learning_card: {
       title: "Where Did I Learn?",
