@@ -15,34 +15,39 @@ const Skills_bar = () => {
 
   const languages = [
     {
-      name: "Next.js",
-      icon: `${next}`,
-      class: `h-20 min-w-20 p-2rounded-xl ${opacity} grayscale duration-1000 transition-all animate-photo`,
-    },
-    {
-      name: "React",
-      icon: "/react_icon.png",
+      name: "Splunk",
+      icon: "/SplunkLogo.png",
       class: `h-20 min-w-20 p-2 rounded-full ${opacity} grayscale duration-1000 transition-all animate-photo`,
     },
     {
-      name: "TypeScript",
-      icon: "/tsx_icon.png",
+      name: "Suricata",
+      icon: "/Suricata.png",
       class: `h-20 min-w-20 p-2 rounded-full ${opacity} grayscale duration-1000 transition-all animate-photo`,
     },
     {
-      name: "Tailwind",
-      icon: "/tailwind_icon.png",
+      name: "Bash",
+      icon: "/bash.png",
       class: `h-20 min-w-20 p-2 rounded-xl ${opacity} grayscale duration-1000 transition-all animate-photo`,
     },
     {
-      name: "Node.js",
-      icon: "/node_icon.png",
+      name: "Wireshark",
+      icon: "/wireshark.png",
       class: `h-20 min-w-20 p-2 rounded-xl ${opacity} grayscale duration-1000 transition-all animate-photo`,
     },
     {
-      name: "Jest",
-      icon: "/jest_icon.png",
+      name: "PostgreSQ",
+      icon: "/sql.png",
       class: `h-20 min-w-20 p-2 rounded-xl ${opacity}  grayscale duration-1000 transition-all animate-photo`,
+    },
+    {
+      name: "ISO 27001",
+      icon: "/ISO-27001.png",
+      class: `h-20 min-w-20 p-2 rounded-xl ${opacity}  grayscale duration-1000 transition-all animate-photo`,
+    },
+    {
+      name: "NIST",
+      icon: `/nist.png`,
+      class: `h-20 min-w-20 p-2rounded-xl ${opacity} grayscale duration-1000 transition-all animate-photo`,
     },
     {
       name: "Git",

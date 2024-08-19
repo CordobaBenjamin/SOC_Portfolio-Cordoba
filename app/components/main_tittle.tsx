@@ -35,17 +35,17 @@ const Main_title = () => {
 
       <div className="flex justify-center items-center">
         <h1
-          className={` text-7xl min-[505px]:text-8xl min-[665px]:text-9xl lg:text-12xl xl:text-14 2xl:text-15xl font-bold text-transparent bg-clip-text text-center w-full`}
+          className={` text-7xl min-[505px]:text-8xl min-[665px]:text-9xl lg:text-12xl xl:text-14 2xl:text-12xl font-bold text-transparent bg-clip-text text-center w-full`}
         >
           <span
-            className={`inline-block ${textSecondary} animate__animated animate__slideInLeft`}
+            className={`inline-block ${textSecondary}  animate__animated animate__slideInLeft`}
           >
-            Front End
+            Security OC 
           </span>{" "}
           <span
             className={`block ${textMain} animate__animated animate__slideInLeft`}
           >
-            Developer
+            Analyst
           </span>
         </h1>
       </div>

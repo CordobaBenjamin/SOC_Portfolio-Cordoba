@@ -92,7 +92,7 @@ const Proyects = () => {
                 target="_blank"
               >
                 <Image
-                  src="/sign_up.png"
+                  src="/software.jpg"
                   className="inset-0 w-full h-full object-cover grayscale-image transition-transform duration-300 transform scale-100 hover:scale-125"
                   alt="Image"
                   layout="fill"
@@ -128,7 +128,7 @@ const Proyects = () => {
                 target="_blank"
               >
                 <Image
-                  src="/market_gaming.png"
+                  src="/tools.jpg"
                   className="inset-0 w-full h-full object-cover  grayscale-image transition-transform duration-300 transform scale-100 hover:scale-125"
                   alt="Image"
                   layout="fill"
@@ -167,7 +167,7 @@ const Proyects = () => {
                 target="_blank"
               >
                 <Image
-                  src="/hangman.png"
+                  src="/frameworks.jpg"
                   className="inset-0 w-full h-full object-cover  grayscale-image transition-transform duration-300 transform scale-100 hover:scale-125"
                   alt="Image"
                   layout="fill"
