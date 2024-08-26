@@ -10,7 +10,7 @@ const Colors: any = {
       git: "/gitHub_icon.png",
       mail: "/contact_icon.png",
       me: "/me_icon.png",
-      mePic: "/me.png",
+      mePic: "/me2.png",
       study: "/study_logo.png",
       telefono: "/telefono_icon.png",
       next: "/next_icon.png",

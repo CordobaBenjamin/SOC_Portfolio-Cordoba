@@ -88,7 +88,7 @@ const Proyects = () => {
               className={`w-full h-72 xl:h-96  ${overlap2} rounded-xl overflow-hidden my-5 relative ${textMain}`}
             >
               <a
-                href="https://github.com/CordobaBenjamin/Cordoba-LogginProyect"
+                href=""
                 target="_blank"
               >
                 <Image
@@ -124,7 +124,7 @@ const Proyects = () => {
               className={`w-full h-72 xl:h-96  ${overlap2} rounded-xl overflow-hidden my-5 relative ${textMain}`}
             >
               <a
-                href="https://github.com/CordobaBenjamin/MarketGaming-eCommerceProyect"
+                href=""
                 target="_blank"
               >
                 <Image
@@ -163,7 +163,7 @@ const Proyects = () => {
               className={`w-full h-72 xl:h-96  ${overlap2} rounded-xl overflow-hidden my-5 relative ${textMain}`}
             >
               <a
-                href="https://github.com/CordobaBenjamin/TsProyect-HangMan-Game"
+                href=""
                 target="_blank"
               >
                 <Image
